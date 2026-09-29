@@ -12,10 +12,24 @@ Buka dan jalankan terminal lokal (PowerShell / CMD / Bash) secara langsung di ta
 ## 🌟 Fitur Utama
 
 - **In-Browser Terminal**: Akses command line lokal langsung dari tab browser tanpa perlu beralih aplikasi.
+- **Smart Respond & Manual Action Buttons**:
+  - ⚡ **Auto Enter/Y (Mode Petir)**: Mendeteksi dan otomatis merespons prompt CLI konfirmasi seperti `(y/n)` atau `[Enter]`. Tersedia opsi **Aman** (melewati prompt yang berisiko/destruktif) dan **Agresif** (langsung auto-respond semua prompt).
+  - 🌊 **Kirim Enter Manual (Mode Ombak)**: Mengirimkan sinyal `Enter (\r)` instan ke panel aktif hanya dengan sekali klik tanpa perlu menyentuh keyboard fisik.
+- **Split Pane & Multi-Tab**: Buka beberapa sesi tab independen dan split panel berdampingan (side-by-side).
 - **Xterm.js Full Support**: Dukungan penuh emulator terminal (ANSI colors, cursor styling, fit addon, copy-paste).
 - **Persistent Extension Key**: Menggunakan public key tetap di `manifest.json`, sehingga Extension ID selalu konsisten dan tidak berubah saat reload atau ganti folder.
 - **Automated Host Setup**: Skrip instalasi otomatis untuk mendaftarkan Native Messaging Host ke Registry Windows.
-- **Multi-Tab Ready**: Desain antarmuka tab rapi dengan akses popup cepat.
+
+---
+
+## ⚡ Mode Aksi Panel (Auto Enter & Enter Manual)
+
+Di setiap header panel terminal, terdapat tombol aksi pintar:
+
+| Tombol | Simbol | Fungsi & Mode | Keterangan |
+| :--- | :---: | :--- | :--- |
+| **Auto Enter / Y** | ⚡ | **Auto-Respond Prompt CLI** | Klik ikon petir untuk membuka menu pilihan mode:<br>• **Mati (Off)**: Tidak ada respons otomatis.<br>• 🛡️ **Aman (Safe)**: Menjawab prompt konfirmasi standar, otomatis berhenti jika prompt mengandung kata berisiko/destruktif.<br>• ⚡ **Agresif (Aggressive)**: Menjawab otomatis seluruh prompt seketika. |
+| **Manual Enter** | 🌊 | **Kirim Enter Instan** | Mengirimkan trigger `Enter` ke shell panel tersebut tanpa harus menekan keyboard fisik. Sangat praktis untuk alur kerja cepat atau input satu tangan. |
 
 ---
 
@@ -61,7 +75,7 @@ Jalankan file instalasi agar browser diizinkan berkomunikasi dengan terminal lok
 
 1. Klik ikon ekstensi **Local Terminal In-Tab** di toolbar browser.
 2. Klik **Buka Terminal** untuk meluncurkan terminal di tab baru browser.
-3. Anda langsung terhubung ke shell lokal Anda!
+3. Gunakan tombol **⚡ (Auto Enter/Y)** atau **🌊 (Enter Manual)** di atas header panel sesuai kebutuhan alur kerja Anda.
 
 ---
 
