@@ -1,1 +1,16 @@
+# Dependencies
 node_modules/
+package-lock.json
+host/node_modules/
+host/package-lock.json
+
+# Generated Native Messaging Manifests & Logs
+host/host-manifest.json
+*.log
+host/*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
