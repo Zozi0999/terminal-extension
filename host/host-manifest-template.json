@@ -1,0 +1,9 @@
+{
+  "name": "com.antigravity.terminal",
+  "description": "Antigravity Local Terminal Host",
+  "path": "[HOST_PATH]",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://[EXTENSION_ID]/"
+  ]
+}

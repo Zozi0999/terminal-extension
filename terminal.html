@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Terminal In-Tab</title>
+  <link rel="stylesheet" href="xterm.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #120707;
+      --bg-primary-rgb: 18,7,7;
+      --bg-secondary: #1a0b0b;
+      --bg-panel: #170a0a;
+      --bg-panel-rgb: 23,10,10;
+      --bg-glass: rgba(26, 11, 11, 0.72);
+      --border: #3a1717;
+      --border-soft: rgba(var(--accent-rgb),0.12);
+      --border-active: #ef4444;
+      --text: #fdf2f2;
+      --text-muted: #9a7373;
+      --text-dim: #6b4c4c;
+      --accent: #ef4444;
+      --accent-2: #f87171;
+      --accent-hover: #dc2626;
+      --accent-rgb: 239,68,68;
+      --danger: #f87171;
+      --success: #34d399;
+      --warning: #fbbf24;
+      --shadow-color: rgba(0,0,0,0.55);
+    }
+
+    /* ── Aura Es (ice) theme: overrides the fire palette above ──
+       --danger/--success/--warning stay universal (semantic colors, not
+       tied to theme identity). Everything else that reads --accent-rgb
+       (borders, glows, hovers) recolors automatically since those rules
+       reference the variable rather than a hardcoded rgba() triplet. */
+    :root[data-theme="aura-es"] {
+      --bg-primary: #050b14;
+      --bg-primary-rgb: 5,11,20;
+      --bg-secondary: #08111d;
+      --bg-panel: #071019;
+      --bg-panel-rgb: 7,16,25;
+      --bg-glass: rgba(8, 17, 29, 0.72);
+      --border: #16324a;
+      --border-active: #38bdf8;
+      --text: #eaf6ff;
+      --text-muted: #7ba3c2;
+      --text-dim: #4f7391;
+      --accent: #38bdf8;
+      --accent-2: #7dd3fc;
+      --accent-hover: #0ea5e9;
+      --accent-rgb: 56,189,248;
+      --shadow-color: rgba(2,10,22,0.6);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--bg-primary);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow: hidden;
+    }
+
+    body { position: relative; display: flex; flex-direction: column; }
+
+    ::selection { background: rgba(var(--accent-rgb),0.35); }
+
+    /* ── Fire aura: flame glow pooling in the four screen corners ──
+       Perf note: no filter:blur() / mix-blend-mode here on purpose - both force the
+       compositor to re-rasterize a viewport-sized layer every animation frame, which
+       is what made this heavy on weaker GPUs. The radial-gradient already fades to
+       transparent on its own (extra stops below smooth the falloff), so the softness
+       looks the same without the per-frame blur/blend cost. Only opacity/transform
+       are animated, which stay on the compositor thread (cheap, GPU-only). */
+    #fire-aura {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+      contain: strict;
+    }
+    .flame {
+      position: absolute;
+      width: 42vmax;
+      height: 42vmax;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+        rgba(255,158,66,0.62) 0%,
+        rgba(255,132,56,0.42) 16%,
+        rgba(255,94,26,0.30) 30%,
+        rgba(235,60,22,0.17) 44%,
+        rgba(220,38,20,0.09) 58%,
+        rgba(180,20,15,0.03) 70%,
+        transparent 84%);
+      will-change: transform, opacity;
+      transform: translateZ(0);
+      contain: strict;
+    }
+    /* Aura Es: same falloff/perf shape, recolored to icy blue/cyan */
+    :root[data-theme="aura-es"] .flame {
+      background: radial-gradient(circle,
+        rgba(186,230,253,0.60) 0%,
+        rgba(125,211,252,0.42) 16%,
+        rgba(56,189,248,0.30) 30%,
+        rgba(14,165,233,0.17) 44%,
+        rgba(30,64,175,0.09) 58%,
+        rgba(15,23,42,0.03) 70%,
+        transparent 84%);
+    }
+
+    .flame.tl { top: -20vmax; left: -20vmax; animation: flame-a 5.2s ease-in-out infinite; }
+    .flame.tr { top: -20vmax; right: -20vmax; animation: flame-b 4.6s ease-in-out infinite 0.7s; }
+    .flame.bl { bottom: -20vmax; left: -20vmax; animation: flame-b 5s ease-in-out infinite 1.4s; }
+    .flame.br { bottom: -20vmax; right: -20vmax; animation: flame-a 4.8s ease-in-out infinite 0.35s; }
+
+    @keyframes flame-a {
+      0%   { opacity: 0.55; transform: scale(1)     translate(0, 0); }
+      18%  { opacity: 0.8;  transform: scale(1.08)   translate(1.5%, -1%); }
+      36%  { opacity: 0.5;  transform: scale(0.95)   translate(-1%, 1.5%); }
+      54%  { opacity: 0.82; transform: scale(1.1)    translate(0.5%, 0.5%); }
+      72%  { opacity: 0.6;  transform: scale(1.0)    translate(-1.5%, -0.5%); }
+      88%  { opacity: 0.72; transform: scale(1.05)   translate(1%, 0); }
+      100% { opacity: 0.55; transform: scale(1)      translate(0, 0); }
+    }
+    @keyframes flame-b {
+      0%   { opacity: 0.5;  transform: scale(1)      translate(0, 0); }
+      22%  { opacity: 0.75; transform: scale(1.07)   translate(-1.5%, 1%); }
+      44%  { opacity: 0.45; transform: scale(0.94)   translate(1%, -1.5%); }
+      66%  { opacity: 0.8;  transform: scale(1.1)     translate(0, 1%); }
+      84%  { opacity: 0.58; transform: scale(1.03)    translate(-0.5%, 0); }
+      100% { opacity: 0.5;  transform: scale(1)       translate(0, 0); }
+    }
+
+    /* ── Top Toolbar ── */
+    #toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 14px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(14px) saturate(150%);
+      -webkit-backdrop-filter: blur(14px) saturate(150%);
+      border-bottom: 1px solid var(--border);
+      height: 46px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 5;
+    }
+    #toolbar::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0; bottom: -1px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb),0.55), transparent);
+      opacity: 0.6;
+    }
+
+    #toolbar-title {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.3px;
+      margin-right: 2px;
+      user-select: none;
+    }
+    #toolbar-title .bolt {
+      display: inline-block;
+      filter: drop-shadow(0 0 6px rgba(var(--accent-rgb),0.8));
+      animation: pulse-bolt 2.6s ease-in-out infinite;
+    }
+    @keyframes pulse-bolt {
+      0%, 100% { filter: drop-shadow(0 0 4px rgba(var(--accent-rgb),0.6)); transform: scale(1); }
+      50%      { filter: drop-shadow(0 0 10px rgba(var(--accent-rgb),1)); transform: scale(1.08); }
+    }
+
+    .tb-divider {
+      width: 1px;
+      height: 20px;
+      background: var(--border);
+      margin: 0 4px;
+      flex-shrink: 0;
+    }
+
+    .tb-btn {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-family: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+      white-space: nowrap;
+    }
+    .tb-btn:hover {
+      background: rgba(var(--accent-rgb),0.10);
+      border-color: rgba(var(--accent-rgb),0.4);
+      color: var(--text);
+    }
+    .tb-btn:active { transform: scale(0.94); }
+    .tb-btn.active {
+      background: rgba(var(--accent-rgb),0.16);
+      border-color: var(--accent);
+      color: var(--accent-2);
+      box-shadow: 0 0 12px rgba(var(--accent-rgb),0.25);
+    }
+    .tb-btn.icon-only { padding: 5px 7px; }
+    .tb-btn svg { flex-shrink: 0; }
+
+    #toolbar-right { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+
+    .tb-group {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 2px;
+    }
+    .tb-group .tb-btn {
+      border: none;
+      background: transparent;
+      border-radius: 5px;
+      padding: 4px 8px;
+    }
+    .tb-group .tb-btn:hover { background: rgba(var(--accent-rgb),0.14); }
+    #font-size-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      min-width: 30px;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+      user-select: none;
+    }
+
+    /* ── Tab strip (in-extension tabs, like Windows Terminal / PowerShell 7) ──
+       Lives BELOW the workspace now, so tabs hang down from a top border instead
+       of standing up from a bottom one - keeps the top toolbar uncluttered. */
+    #tab-strip {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      padding: 0 10px 6px;
+      background: var(--bg-glass);
+      border-top: 1px solid var(--border);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 4;
+    }
+    #tab-list {
+      display: flex;
+      align-items: flex-start;
+      gap: 4px;
+      flex: 1;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    #tab-list::-webkit-scrollbar { display: none; }
+
+    .tab-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px 6px 10px;
+      border-radius: 0 0 8px 8px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border);
+      border-top: none;
+      color: var(--text-muted);
+      font-size: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      max-width: 180px;
+      flex-shrink: 0;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .tab-item:hover { background: rgba(var(--accent-rgb),0.08); color: var(--text); }
+    .tab-item.active {
+      background: var(--bg-panel);
+      color: var(--accent-2);
+      border-color: var(--accent);
+      box-shadow: 0 2px 10px rgba(var(--accent-rgb),0.15);
+    }
+    .tab-icon { flex-shrink: 0; font-size: 12px; }
+    .tab-title { overflow: hidden; text-overflow: ellipsis; }
+    .tab-close {
+      flex-shrink: 0;
+      border: none;
+      background: transparent;
+      color: inherit;
+      opacity: 0.45;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 1px 4px;
+      border-radius: 4px;
+    }
+    .tab-close:hover { opacity: 1; background: rgba(var(--accent-rgb),0.3); color: var(--text); }
+
+    #btn-add-tab {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 27px;
+      height: 27px;
+      margin-top: 4px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    #btn-add-tab:hover { background: rgba(var(--accent-rgb),0.14); border-color: var(--accent); color: var(--accent-2); }
+    #btn-add-tab:active { transform: scale(0.92); }
+
+    /* Live thumbnail preview shown on tab hover (grabbed from that tab's own xterm
+       canvas layers - a real snapshot of its current content, like a taskbar peek) */
+    .tab-preview {
+      position: fixed;
+      z-index: 300;
+      background: linear-gradient(160deg, #1e0e0e, #170a0a);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 6px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.55), 0 0 0 1px rgba(var(--accent-rgb),0.08);
+      pointer-events: none;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.12s ease, transform 0.12s ease;
+    }
+    .tab-preview.show { opacity: 1; transform: translateY(0); }
+    .tab-preview-canvas {
+      position: relative;
+      overflow: hidden;
+      border-radius: 6px;
+      background: var(--bg-primary);
+    }
+    .tab-preview-label {
+      margin-top: 5px;
+      font-size: 10px;
+      color: var(--text-muted);
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* Custom right-click menu (Copy/Paste) — real browsers don't offer a native
+       "Paste" item over a non-editable DOM area like the terminal, so this stands
+       in for it, styled to match the rest of the dark-red chrome. */
+    .ctx-menu {
+      position: fixed;
+      z-index: 400;
+      min-width: 150px;
+      background: linear-gradient(160deg, #1e0e0e, #170a0a);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 5px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.55), 0 0 0 1px rgba(var(--accent-rgb),0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .ctx-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 7px 10px;
+      background: transparent;
+      border: none;
+      border-radius: 5px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 12px;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.12s ease;
+    }
+    .ctx-menu-item:hover { background: rgba(var(--accent-rgb),0.16); }
+    .ctx-menu-item:disabled { color: var(--text-dim); cursor: default; }
+    .ctx-menu-item:disabled:hover { background: transparent; }
+    .ctx-menu-item.selected { background: rgba(var(--accent-rgb),0.14); box-shadow: inset 0 0 0 1px var(--accent); }
+    .ctx-menu-sep { height: 1px; background: var(--border); margin: 3px 2px; }
+
+    /* Auto Enter/Y mode picker - stacked label+desc instead of the icon+text
+       row layout copy/paste uses */
+    .auto-mode-item { flex-direction: column; align-items: flex-start; gap: 1px; min-width: 170px; }
+    .auto-mode-item-label { font-size: 12px; font-weight: 600; }
+    .auto-mode-item-desc { font-size: 10px; color: var(--text-muted); }
+
+    /* ── Workspace root: holds one .workspace per tab, only the active one shown ──
+       Inactive tabs use visibility:hidden (not display:none) so their xterm DOM stays
+       laid out and measurable in the background - that's what lets the hover preview
+       grab a real snapshot of a tab without switching to it first. They're stacked via
+       position:absolute so hidden ones don't take up flow space or affect layout. */
+    #workspace-root {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .workspace {
+      display: flex;
+      position: absolute;
+      inset: 0;
+      visibility: hidden;
+      gap: 10px;
+      padding: 10px;
+    }
+    .workspace.active-tab { visibility: visible; }
+
+    /* ── Pane ── */
+    .pane {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      flex: 1;
+      min-width: 100px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: var(--bg-panel);
+      box-shadow:
+        0 10px 30px var(--shadow-color),
+        inset 0 1px 0 rgba(255,255,255,0.03);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .pane[data-pane="2"] { display: none; }
+
+    .pane-header {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      padding: 0 12px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-bottom: 1px solid var(--border);
+      height: 36px;
+      flex-shrink: 0;
+    }
+
+    /* macOS-style traffic light dots for a familiar, native terminal feel */
+    .traffic-lights {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-right: 3px;
+    }
+    .tl-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.25);
+    }
+    .tl-dot.red    { background: #ff5f56; }
+    .tl-dot.yellow { background: #ffbd2e; }
+    .tl-dot.green  { background: #27c93f; }
+    .tl-dot.disabled { opacity: 0.35; filter: saturate(0.3); cursor: default; }
+    .tl-dot.clickable { cursor: pointer; }
+    .tl-dot.clickable:hover { filter: brightness(1.25); box-shadow: 0 0 6px currentColor, inset 0 0 0 1px rgba(0,0,0,0.25); }
+
+    .pane-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    .pane-shell-badge {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(var(--accent-rgb),0.14);
+      color: var(--accent-2);
+      font-weight: 500;
+      margin-left: 2px;
+      user-select: none;
+    }
+
+    .pane-auto-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px; height: 20px;
+      padding: 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 11px;
+      line-height: 1;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .pane-auto-btn:hover { color: var(--text-dim); border-color: var(--accent-2); }
+    .pane-auto-btn.active {
+      background: rgba(var(--accent-rgb),0.18);
+      border-color: var(--accent-2);
+      color: #fbbf24;
+      box-shadow: 0 0 6px rgba(var(--accent-rgb),0.35);
+      animation: auto-btn-pulse 1.8s ease-in-out infinite;
+    }
+    @keyframes auto-btn-pulse {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+    /* Mode Agresif: warna danger universal (bukan --accent-rgb tema) sengaja
+       dipakai di sini - ini menandakan risiko nyata (semua prompt di-ya-kan
+       tanpa filter), jadi harus tetap merah terlepas dari tema Aura Api/Es. */
+    .pane-auto-btn.aggressive {
+      background: rgba(248,113,113,0.22);
+      border-color: var(--danger);
+      color: var(--danger);
+      box-shadow: 0 0 8px rgba(248,113,113,0.55);
+      animation: auto-btn-pulse-aggressive 0.9s ease-in-out infinite;
+    }
+    @keyframes auto-btn-pulse-aggressive {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.45; }
+    }
+
+    .pane-status-wrap {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .pane-status-text {
+      font-size: 10px;
+      color: var(--text-dim);
+      user-select: none;
+    }
+    .pane-status {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--text-muted);
+      flex-shrink: 0;
+      position: relative;
+      transition: background 0.3s;
+    }
+    .pane-status.connecting {
+      background: var(--warning);
+      animation: status-pulse 1s ease-in-out infinite;
+    }
+    .pane-status.connected {
+      background: var(--success);
+      box-shadow: 0 0 7px var(--success);
+    }
+    .pane-status.connected::after {
+      content: '';
+      position: absolute; inset: -3px;
+      border-radius: 50%;
+      border: 1px solid var(--success);
+      opacity: 0.5;
+      animation: status-ring 2s ease-out infinite;
+    }
+    .pane-status.error { background: var(--danger); box-shadow: 0 0 7px var(--danger); }
+    @keyframes status-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+    @keyframes status-ring {
+      0%   { transform: scale(1);   opacity: 0.55; }
+      100% { transform: scale(2.4); opacity: 0; }
+    }
+
+    .pane-body {
+      flex: 1;
+      overflow: hidden;
+      padding: 8px 6px 6px 10px;
+      background: var(--bg-primary);
+      position: relative;
+    }
+
+    /* ── Terminal transparency/blur ("seperti config Zsh") ──
+       Opt-in (off by default): a browser tab can't show the real desktop
+       behind it like a native terminal emulator can, so this reveals the
+       #fire-aura/#fire-aura .flame glow layer instead (already sitting behind
+       everything at z-index 0), blurred via backdrop-filter — same idea, our
+       own ambient background standing in for the desktop wallpaper. .pane
+       itself (not just .pane-body) has to drop its opaque fill for the blur
+       to reveal anything, since it fully covers the aura layer otherwise.
+       The actual tint/opacity comes from xterm's own theme.background (set
+       to an rgba() with the slider's alpha in terminal.js) layered on top -
+       .pane/.pane-body/.xterm-viewport here are just cleared to transparent
+       so that single alpha layer isn't hidden behind opaque fills. */
+    html[data-term-transparent] .pane {
+      background: transparent;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+    html[data-term-transparent] .pane-header {
+      /* Header ikut slider opacity yang sama dengan area terminal (--term-bg-alpha),
+         bukan --bg-glass yang tetap 72% - kalau tidak, header terasa "tidak ikut
+         blur" begitu slider diturunkan karena tetap terlihat solid sementara
+         terminal di bawahnya makin transparan. */
+      background: rgba(var(--bg-panel-rgb), var(--term-bg-alpha));
+    }
+    html[data-term-transparent] .pane-body {
+      /* SATU-SATUNYA lapisan yang membawa alpha di area terminal (xterm sendiri
+         di-set background alpha 0 lewat composeXtermTheme() di terminal.js) -
+         supaya rata di SELURUH kotak .pane-body, termasuk sisa piksel yang tidak
+         tergambar grid xterm (pembulatan baris/kolom fitAddon nyaris tidak pernah
+         pas persis dengan ukuran kontainer). Kalau alpha-nya dipecah di dua
+         lapisan berbeda, sisa piksel itu terlihat beda transparansinya dari area
+         yang tertutup grid xterm - persis keluhan "terminal tidak pas border". */
+      background: rgba(var(--bg-primary-rgb), var(--term-bg-alpha));
+    }
+    html[data-term-transparent] .xterm-viewport {
+      background-color: transparent !important;
+    }
+
+    /* ── Mode Hemat Performa ── opt-in, off by default (data-perf-mode absent
+       by default = zero visual change). Trims continuous compositor/GPU work
+       that isn't essential - ambient aura glow, status-ring/auto-btn pulses,
+       and (heaviest) the transparency backdrop-filter blur - without removing
+       any feature; everything here just stops animating/blurring, the
+       underlying toggle/state stays exactly as the user left it. */
+    html[data-perf-mode] .flame,
+    html[data-perf-mode] #toolbar-title .bolt,
+    html[data-perf-mode] .pane-status.connected::after,
+    html[data-perf-mode] .pane-auto-btn.active,
+    html[data-perf-mode] .pane-auto-btn.aggressive {
+      animation-play-state: paused;
+    }
+    html[data-perf-mode][data-term-transparent] .pane {
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+
+    /* Tabs not currently visible never need their ambient pulses running -
+       visibility:hidden (not display:none) keeps them measurable for the
+       hover-preview feature, but their animations shouldn't keep ticking in
+       the background regardless of Mode Hemat Performa. Zero visual effect
+       on the active tab (this only pauses what's already invisible). */
+    .workspace:not(.active-tab) .pane-status.connected::after,
+    .workspace:not(.active-tab) .pane-auto-btn.active,
+    .workspace:not(.active-tab) .pane-auto-btn.aggressive {
+      animation-play-state: paused;
+    }
+
+    /* Connecting overlay shown until first output arrives */
+    .pane-loading {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--bg-primary);
+      z-index: 3;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
+    }
+    .pane-loading.hidden { opacity: 0; }
+    .spinner-ring {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      border: 2.5px solid rgba(var(--accent-rgb),0.18);
+      border-top-color: var(--accent);
+      animation: spin 0.85s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .pane-loading-text {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.3px;
+    }
+
+    /* Bell flash feedback */
+    @keyframes bell-flash {
+      0%, 100% { box-shadow: 0 10px 30px var(--shadow-color), inset 0 1px 0 rgba(255,255,255,0.03); }
+      30% { box-shadow: 0 0 0 2px var(--accent), 0 0 26px rgba(var(--accent-rgb),0.55); }
+    }
+    .pane.bell { animation: bell-flash 0.5s ease; }
+
+    /* Active pane highlight — only distinguish when split (2 panes visible) */
+    .workspace.split .pane.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px var(--accent), 0 0 20px rgba(var(--accent-rgb),0.22), 0 10px 30px var(--shadow-color);
+    }
+    .pane.active .pane-header {
+      border-bottom-color: var(--accent);
+    }
+    .pane.active .pane-label {
+      color: var(--accent-2);
+    }
+
+    /* File di-drag dari luar (mis. File Explorer) lewat di atas panel ini -
+       lihat listener 'dragover'/'drop' di terminal.js. */
+    .pane.drag-over {
+      border-color: var(--accent);
+      border-style: dashed;
+      box-shadow: 0 0 0 2px var(--accent), 0 0 24px rgba(var(--accent-rgb),0.3);
+    }
+
+    /* ── Resizer (Divider) ── */
+    .resizer {
+      width: 8px;
+      background: transparent;
+      cursor: col-resize;
+      flex-shrink: 0;
+      position: relative;
+      display: none; /* hidden in single-pane mode */
+    }
+    .resizer::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 4px;
+      height: 44px;
+      background: var(--border);
+      border-radius: 999px;
+      transition: background 0.15s, height 0.15s;
+    }
+    .resizer:hover::after, .resizer.dragging::after {
+      background: var(--accent);
+      height: 64px;
+    }
+
+    /* ── Scrollbar ── */
+    .xterm-viewport::-webkit-scrollbar { width: 7px; }
+    .xterm-viewport::-webkit-scrollbar-track { background: transparent; }
+    .xterm-viewport::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    .xterm-viewport::-webkit-scrollbar-thumb:hover { background: #5c2626; }
+
+    /* ── Shell Picker Modal ── */
+    #shell-modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(6,2,2,0.65);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+    #shell-modal-overlay.show { display: flex; animation: overlay-in 0.15s ease; }
+    @keyframes overlay-in { from { opacity: 0; } to { opacity: 1; } }
+
+    #shell-modal {
+      background: linear-gradient(160deg, #1e0e0e, #170a0a);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      width: 300px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(var(--accent-rgb),0.06);
+      animation: modal-in 0.18s cubic-bezier(.2,.9,.3,1.2);
+    }
+    @keyframes modal-in {
+      from { opacity: 0; transform: translateY(8px) scale(0.97); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    #shell-modal h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    #shell-modal p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .shell-option {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      border: 1px solid var(--border);
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .shell-option:hover {
+      background: rgba(var(--accent-rgb),0.1);
+      border-color: var(--accent);
+      color: var(--accent-2);
+      transform: translateX(2px);
+    }
+    .shell-option .shell-icon { font-size: 18px; }
+    .shell-option .shell-name { font-size: 13px; font-weight: 500; }
+    .shell-option .shell-desc { font-size: 10px; color: var(--text-muted); margin-top: 1px; }
+    #modal-cancel {
+      width: 100%;
+      margin-top: 12px;
+      padding: 8px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    #modal-cancel:hover { background: var(--border); color: var(--text); }
+
+    /* ── Settings Modal ── */
+    #settings-modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(6,2,2,0.65);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+    #settings-modal-overlay.show { display: flex; animation: overlay-in 0.15s ease; }
+
+    #settings-modal {
+      background: linear-gradient(160deg, #1e0e0e, #170a0a);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      width: 320px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(var(--accent-rgb),0.06);
+      animation: modal-in 0.18s cubic-bezier(.2,.9,.3,1.2);
+    }
+    #settings-modal h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .settings-section-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .theme-grid {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .theme-option {
+      flex: 1;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s;
+    }
+    .theme-option:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .theme-option.selected {
+      border-color: var(--accent);
+      background: rgba(var(--accent-rgb),0.08);
+      box-shadow: 0 0 0 1px var(--accent), 0 0 16px rgba(var(--accent-rgb),0.25);
+    }
+    .theme-swatch {
+      width: 100%;
+      height: 36px;
+      border-radius: 7px;
+      margin-bottom: 8px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .swatch-aura-api { background: linear-gradient(135deg, #ff9e42, #dc2620, #120707); }
+    .swatch-aura-es  { background: linear-gradient(135deg, #bae6fd, #38bdf8, #050b14); }
+    .theme-option-name { font-size: 12px; font-weight: 600; color: var(--text); }
+    .theme-option-desc { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text);
+      cursor: pointer;
+      margin-bottom: 10px;
+      user-select: none;
+    }
+    .toggle-row input[type="checkbox"] { accent-color: var(--accent); width: 15px; height: 15px; cursor: pointer; }
+    .opacity-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      transition: opacity 0.15s ease;
+    }
+    .opacity-row.disabled { opacity: 0.35; pointer-events: none; }
+    .opacity-row input[type="range"] { flex: 1; accent-color: var(--accent); cursor: pointer; }
+    #term-opacity-value {
+      min-width: 34px;
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      color: var(--text);
+    }
+    .settings-hint {
+      font-size: 10px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: -4px 0 16px;
+    }
+
+    #settings-close {
+      width: 100%;
+      padding: 8px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    #settings-close:hover { background: var(--border); color: var(--text); }
+
+    /* ── Toast notifications ── */
+    #toast-container {
+      position: fixed;
+      right: 16px;
+      bottom: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 200;
+      pointer-events: none;
+    }
+    .toast {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 14px;
+      background: linear-gradient(160deg, #241010, #1a0b0b);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      font-size: 12px;
+      color: var(--text);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.5);
+      animation: toast-in 0.22s cubic-bezier(.2,.9,.3,1.2);
+      max-width: 280px;
+    }
+    .toast.leaving { animation: toast-out 0.2s ease forwards; }
+    .toast.success { border-left-color: var(--success); }
+    .toast.error   { border-left-color: var(--danger); }
+    .toast.info    { border-left-color: var(--accent); }
+    @keyframes toast-in {
+      from { opacity: 0; transform: translateX(16px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes toast-out {
+      to { opacity: 0; transform: translateX(16px); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Fire aura: ambient flame glow pooling at the four screen corners -->
+<div id="fire-aura">
+  <div class="flame tl"></div>
+  <div class="flame tr"></div>
+  <div class="flame bl"></div>
+  <div class="flame br"></div>
+</div>
+
+<!-- Toolbar -->
+<div id="toolbar">
+  <span id="toolbar-title"><span class="bolt">⚡</span> Terminal</span>
+
+  <div class="tb-divider"></div>
+
+  <!-- Active pane's shell info -->
+  <button class="tb-btn" id="btn-shell-1" title="Klik untuk ganti shell Panel 1">
+    <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3"/></svg>
+    <span id="label-shell-1">Panel 1</span>
+  </button>
+
+  <!-- Pane 2 shell info (hidden until split) -->
+  <button class="tb-btn" id="btn-shell-2" title="Klik untuk ganti shell Panel 2" style="display:none">
+    <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3"/></svg>
+    <span id="label-shell-2">Panel 2</span>
+  </button>
+
+  <div id="toolbar-right">
+    <div class="tb-group" title="Ukuran font terminal aktif">
+      <button class="tb-btn icon-only" id="btn-font-dec" title="Perkecil font (Ctrl -)">
+        <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"/></svg>
+      </button>
+      <span id="font-size-label">13.5</span>
+      <button class="tb-btn icon-only" id="btn-font-inc" title="Perbesar font (Ctrl +)">
+        <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/></svg>
+      </button>
+    </div>
+
+    <button class="tb-btn icon-only" id="btn-clear" title="Bersihkan scrollback Panel aktif">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M9 7V4h6v3m-9 0l1 13a1 1 0 001 1h8a1 1 0 001-1l1-13"/></svg>
+    </button>
+
+    <button class="tb-btn icon-only" id="btn-fullscreen" title="Fullscreen (F11)">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4"/></svg>
+    </button>
+
+    <button class="tb-btn icon-only" id="btn-toggle-tabs" title="Sembunyikan tab-strip">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/>
+        <path d="M3 15h18" stroke-width="2"/>
+      </svg>
+    </button>
+
+    <button class="tb-btn icon-only" id="btn-file-explorer" title="Buka File Explorer (Home)">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
+      </svg>
+    </button>
+
+    <button class="tb-btn icon-only" id="btn-settings" title="Pengaturan">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+        <circle cx="12" cy="12" r="3" stroke-width="2"/>
+      </svg>
+    </button>
+
+    <div class="tb-divider"></div>
+
+    <button class="tb-btn" id="btn-split" title="Toggle split view">
+      <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="8" height="18" rx="1" stroke-width="2"/>
+        <rect x="13" y="3" width="8" height="18" rx="1" stroke-width="2"/>
+      </svg>
+      Split
+    </button>
+  </div>
+</div>
+
+<!-- Workspace root: one .workspace per tab is mounted here; only the active one is shown -->
+<div id="workspace-root"></div>
+
+<!-- Tab strip: independent terminal sessions within this one browser tab,
+     like the tab bar in Windows Terminal / PowerShell 7.6.3 - kept at the
+     bottom so the top toolbar stays uncluttered. -->
+<div id="tab-strip">
+  <div id="tab-list"></div>
+  <button id="btn-add-tab" title="Tab baru (seperti di PowerShell 7 / Windows Terminal)">
+    <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14M5 12h14"/></svg>
+  </button>
+</div>
+
+<!-- Template cloned for every new tab -->
+<template id="workspace-template">
+  <div class="workspace">
+    <div class="pane active" data-pane="1">
+      <div class="pane-header">
+        <div class="traffic-lights">
+          <span class="tl-dot red disabled" title="Panel utama tidak bisa ditutup"></span>
+          <span class="tl-dot yellow disabled"></span>
+          <span class="tl-dot green disabled"></span>
+        </div>
+        <span class="pane-label">Panel 1</span>
+        <span class="pane-shell-badge" data-role="badge">-</span>
+        <button class="pane-auto-btn" data-role="auto-toggle" title="Auto Enter/Y untuk prompt CLI (mati)">⚡</button>
+        <button class="pane-auto-btn" data-role="enter-btn" title="Kirim Enter ke panel ini (tanpa perlu tekan Enter di keyboard)">🌊</button>
+        <div class="pane-status-wrap">
+          <span class="pane-status-text" data-role="status-text"></span>
+          <span class="pane-status" data-role="status"></span>
+        </div>
+      </div>
+      <div class="pane-body" data-role="term-container">
+        <div class="pane-loading" data-role="loading">
+          <div class="spinner-ring"></div>
+          <div class="pane-loading-text">Menghubungkan…</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resizer"></div>
+
+    <div class="pane" data-pane="2">
+      <div class="pane-header">
+        <div class="traffic-lights">
+          <span class="tl-dot red clickable" data-role="close-pane2" title="Tutup Panel 2"></span>
+          <span class="tl-dot yellow disabled"></span>
+          <span class="tl-dot green disabled"></span>
+        </div>
+        <span class="pane-label">Panel 2</span>
+        <span class="pane-shell-badge" data-role="badge">-</span>
+        <button class="pane-auto-btn" data-role="auto-toggle" title="Auto Enter/Y untuk prompt CLI (mati)">⚡</button>
+        <button class="pane-auto-btn" data-role="enter-btn" title="Kirim Enter ke panel ini (tanpa perlu tekan Enter di keyboard)">🌊</button>
+        <div class="pane-status-wrap">
+          <span class="pane-status-text" data-role="status-text"></span>
+          <span class="pane-status" data-role="status"></span>
+        </div>
+      </div>
+      <div class="pane-body" data-role="term-container">
+        <div class="pane-loading hidden" data-role="loading">
+          <div class="spinner-ring"></div>
+          <div class="pane-loading-text">Menghubungkan…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- Shell Picker Modal -->
+<div id="shell-modal-overlay">
+  <div id="shell-modal">
+    <h3 id="modal-title">Pilih Shell</h3>
+    <p id="modal-desc">Pilih shell yang ingin dijalankan di panel ini.</p>
+
+    <div class="shell-option" data-shell="powershell.exe">
+      <span class="shell-icon">🪟</span>
+      <div>
+        <div class="shell-name">Windows PowerShell</div>
+        <div class="shell-desc">powershell.exe · Bawaan Windows</div>
+      </div>
+    </div>
+    <div class="shell-option" data-shell="pwsh.exe">
+      <span class="shell-icon">❤️</span>
+      <div>
+        <div class="shell-name">PowerShell 7</div>
+        <div class="shell-desc">pwsh.exe · Cross-platform modern</div>
+      </div>
+    </div>
+    <div class="shell-option" data-shell="cmd.exe">
+      <span class="shell-icon">⬛</span>
+      <div>
+        <div class="shell-name">Command Prompt</div>
+        <div class="shell-desc">cmd.exe · Legacy Windows shell</div>
+      </div>
+    </div>
+    <div class="shell-option" data-shell="ubuntu-wsl">
+      <span class="shell-icon">🐧</span>
+      <div>
+        <div class="shell-name">Ubuntu (WSL)</div>
+        <div class="shell-desc">wsl.exe -d Ubuntu · Linux via WSL2</div>
+      </div>
+    </div>
+
+    <button id="modal-cancel">Batal</button>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div id="settings-modal-overlay">
+  <div id="settings-modal">
+    <h3>⚙️ Pengaturan</h3>
+    <p class="settings-section-label">Tema Tampilan</p>
+    <div class="theme-grid">
+      <div class="theme-option" data-theme-choice="aura-api">
+        <div class="theme-swatch swatch-aura-api"></div>
+        <div class="theme-option-name">🔥 Aura Api</div>
+        <div class="theme-option-desc">Default</div>
+      </div>
+      <div class="theme-option" data-theme-choice="aura-es">
+        <div class="theme-swatch swatch-aura-es"></div>
+        <div class="theme-option-name">❄️ Aura Es</div>
+        <div class="theme-option-desc">Biru es</div>
+      </div>
+    </div>
+
+    <p class="settings-section-label">Transparansi Latar Terminal</p>
+    <label class="toggle-row">
+      <input type="checkbox" id="term-transparent-toggle">
+      <span>Aktifkan transparan + blur (seperti Zsh)</span>
+    </label>
+    <div class="opacity-row" id="opacity-row">
+      <span>Opacity</span>
+      <input type="range" id="term-opacity-slider" min="30" max="100" step="1" value="85">
+      <span id="term-opacity-value">85%</span>
+    </div>
+
+    <p class="settings-section-label">Performa</p>
+    <label class="toggle-row">
+      <input type="checkbox" id="perf-mode-toggle">
+      <span>🍃 Mode Hemat Performa (laptop biasa/lemah)</span>
+    </label>
+    <p class="settings-hint">Mengurangi animasi ambient, blur transparansi, dan kedip kursor — cocok saat menjalankan CLI berat seperti Claude Code di laptop dengan GPU lemah.</p>
+
+    <button id="settings-close">Tutup</button>
+  </div>
+</div>
+
+<!-- Toast notifications -->
+<div id="toast-container"></div>
+
+<script src="xterm.js"></script>
+<script src="addon-fit.js"></script>
+<script src="terminal.js"></script>
+</body>
+</html>

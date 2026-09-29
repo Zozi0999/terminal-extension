@@ -1,0 +1,9 @@
+{
+  "name": "com.antigravity.terminal",
+  "description": "Antigravity Local Terminal Host",
+  "path": "C:\\terminal-extension\\host\\run_host.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://hboehpclamgomblokonkoebgbkaegafl/"
+  ]
+}

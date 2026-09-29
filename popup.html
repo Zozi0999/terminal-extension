@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Palet ini duplikat dari :root di terminal.html - popup.html adalah
+       dokumen/halaman terpisah (extension action popup, bukan bagian dari
+       tab terminal), jadi tidak bisa berbagi <style> lewat DOM yang sama;
+       nilai variabelnya harus tetap identik supaya tema terasa satu sistem
+       yang sama di seluruh UI ekstensi, bukan cuma di tab terminal. */
+    :root {
+      --bg-primary: #120707;
+      --bg-elevated: #241010;
+      --bg-elevated-hover: #2e1414;
+      --border: #3a1717;
+      --border-hover: #5c2626;
+      --text: #fdf2f2;
+      --text-muted: #9a7373;
+      --accent: #ef4444;
+      --accent-2: #f87171;
+      --accent-hover: #dc2626;
+      --accent-deep: #b91c1c;
+      --accent-rgb: 239,68,68;
+    }
+    :root[data-theme="aura-es"] {
+      --bg-primary: #050b14;
+      --bg-elevated: #0c1a2b;
+      --bg-elevated-hover: #0f2136;
+      --border: #16324a;
+      --border-hover: #1e4a68;
+      --text: #eaf6ff;
+      --text-muted: #7ba3c2;
+      --accent: #38bdf8;
+      --accent-2: #7dd3fc;
+      --accent-hover: #0ea5e9;
+      --accent-deep: #0369a1;
+      --accent-rgb: 56,189,248;
+    }
+
+    body {
+      width: 260px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: var(--bg-primary);
+      color: var(--text);
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Aura glow pooling at the popup's four corners - fire (default) or ice,
+       matching whichever theme was last chosen in the terminal tab's Settings
+       menu (no filter:blur()/mix-blend-mode - see terminal.html for why;
+       gradient stops already fade softly on their own without the per-frame
+       repaint cost) */
+    #fire-aura { position: absolute; inset: 0; z-index: 0; pointer-events: none; contain: strict; }
+    .flame {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle,
+        rgba(255,158,66,0.55) 0%,
+        rgba(255,110,42,0.34) 24%,
+        rgba(255,94,26,0.20) 40%,
+        rgba(220,38,20,0.09) 58%,
+        transparent 78%);
+      will-change: transform, opacity;
+      contain: strict;
+    }
+    :root[data-theme="aura-es"] .flame {
+      background: radial-gradient(circle,
+        rgba(186,230,253,0.58) 0%,
+        rgba(125,211,252,0.36) 24%,
+        rgba(56,189,248,0.22) 40%,
+        rgba(14,165,233,0.10) 58%,
+        transparent 78%);
+    }
+    .flame.tl { top: -70px; left: -70px; animation: flame-a 5.2s ease-in-out infinite; }
+    .flame.tr { top: -70px; right: -70px; animation: flame-b 4.6s ease-in-out infinite 0.7s; }
+    .flame.bl { bottom: -70px; left: -70px; animation: flame-b 5s ease-in-out infinite 1.4s; }
+    .flame.br { bottom: -70px; right: -70px; animation: flame-a 4.8s ease-in-out infinite 0.35s; }
+
+    @keyframes flame-a {
+      0%   { opacity: 0.5; transform: scale(1); }
+      35%  { opacity: 0.8; transform: scale(1.1); }
+      70%  { opacity: 0.55; transform: scale(0.95); }
+      100% { opacity: 0.5; transform: scale(1); }
+    }
+    @keyframes flame-b {
+      0%   { opacity: 0.45; transform: scale(1); }
+      40%  { opacity: 0.75; transform: scale(1.08); }
+      75%  { opacity: 0.5; transform: scale(0.96); }
+      100% { opacity: 0.45; transform: scale(1); }
+    }
+
+    /* Keep real content above the flame layer */
+    body > *:not(#fire-aura) { position: relative; z-index: 1; }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-size: 18px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent-2) 0%, var(--accent-hover) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.5px;
+    }
+    p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 0;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .field {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .select-wrapper {
+      position: relative;
+    }
+    select {
+      width: 100%;
+      background-color: var(--bg-elevated);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      transition: all 0.2s ease;
+    }
+    select:hover {
+      border-color: var(--border-hover);
+      background-color: var(--bg-elevated-hover);
+    }
+    select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(var(--accent-rgb), 0.2);
+    }
+    /* Arrow icon for select */
+    .select-wrapper::after {
+      content: '▼';
+      font-size: 10px;
+      color: var(--text-muted);
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    button {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-deep) 100%);
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.25);
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(var(--accent-rgb), 0.35);
+    }
+    button:active {
+      transform: translateY(0);
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="fire-aura">
+    <div class="flame tl"></div>
+    <div class="flame tr"></div>
+    <div class="flame bl"></div>
+    <div class="flame br"></div>
+  </div>
+  <h3>Terminal In-Tab</h3>
+  <p>Jalankan terminal interaktif langsung di tab browser Anda.</p>
+  
+  <div class="field">
+    <label for="shell-select">Pilih Shell Terminal</label>
+    <div class="select-wrapper">
+      <select id="shell-select">
+        <option value="powershell.exe">Windows PowerShell (Bawaan)</option>
+        <option value="pwsh.exe">PowerShell 7 (pwsh.exe)</option>
+        <option value="cmd.exe">Command Prompt (cmd.exe)</option>
+        <option value="ubuntu-wsl">Ubuntu (WSL)</option>
+      </select>
+    </div>
+  </div>
+
+  <button id="open-btn">
+    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+    </svg>
+    Buka Terminal
+  </button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

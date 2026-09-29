@@ -1,0 +1,1228 @@
+2026-07-17T19:43:54.371Z - Memulai Native Host...
+2026-07-17T19:43:54.392Z - node-pty berhasil dimuat.
+2026-07-17T19:43:54.397Z - Menjalankan shell: powershell.exe (cols: 191, rows: 33)
+2026-07-17T19:44:03.755Z - Mematikan host (stdin end).
+2026-07-17T19:44:03.924Z - Memulai Native Host...
+2026-07-17T19:44:03.938Z - node-pty berhasil dimuat.
+2026-07-17T19:44:03.962Z - Menjalankan shell: powershell.exe (cols: 191, rows: 33)
+2026-07-17T19:44:07.474Z - Memulai Native Host...
+2026-07-17T19:44:07.488Z - node-pty berhasil dimuat.
+2026-07-17T19:44:07.525Z - Menjalankan shell: powershell.exe (cols: 94, rows: 33)
+2026-07-17T19:50:26.360Z - Memulai Native Host...
+2026-07-17T19:50:26.381Z - node-pty berhasil dimuat.
+2026-07-17T19:50:26.386Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-17T20:07:40.263Z - Mematikan host (stdin end).
+2026-07-17T21:45:05.751Z - Memulai Native Host...
+2026-07-17T21:45:05.800Z - node-pty berhasil dimuat.
+2026-07-17T21:45:05.806Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-17T21:53:46.315Z - Memulai Native Host...
+2026-07-17T21:53:46.342Z - node-pty berhasil dimuat.
+2026-07-17T21:53:46.346Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-17T21:53:50.866Z - Memulai Native Host...
+2026-07-17T21:53:50.884Z - node-pty berhasil dimuat.
+2026-07-17T21:53:50.889Z - Menjalankan shell: powershell.exe (cols: 95, rows: 34)
+2026-07-17T21:54:45.766Z - Mematikan host (stdin end).
+2026-07-17T21:54:45.767Z - Mematikan host (stdin end).
+2026-07-17T21:55:09.990Z - Memulai Native Host...
+2026-07-17T21:55:10.027Z - node-pty berhasil dimuat.
+2026-07-17T21:55:10.035Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-17T21:55:16.452Z - Memulai Native Host...
+2026-07-17T21:55:16.474Z - node-pty berhasil dimuat.
+2026-07-17T21:55:16.662Z - [resolveShellPath] Hanya alias WindowsApps yang ditemukan: C:\Program Files\WindowsApps\Microsoft.PowerShell_7.6.3.0_x64__8wekyb3d8bbwe\pwsh.exe. Mencoba qupath resolusi lain...
+2026-07-17T21:55:16.663Z - [resolveShellPath] pwsh.exe tidak ditemukan di lokasi manapun. Fallback ke 'pwsh.exe'
+2026-07-17T21:55:16.663Z - Menjalankan shell: pwsh.exe (cols: 95, rows: 34)
+2026-07-17T21:57:17.865Z - Mematikan host (stdin end).
+2026-07-17T21:57:17.910Z - Mematikan host (stdin end).
+2026-07-18T03:24:54.261Z - Memulai Native Host...
+2026-07-18T03:24:54.332Z - node-pty berhasil dimuat.
+2026-07-18T03:24:54.337Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-18T03:24:55.477Z - Memulai Native Host...
+2026-07-18T03:24:55.486Z - node-pty berhasil dimuat.
+2026-07-18T03:24:55.552Z - Menjalankan shell: powershell.exe (cols: 95, rows: 34)
+2026-07-18T03:29:44.398Z - Mematikan host (stdin end).
+2026-07-18T03:29:48.687Z - Memulai Native Host...
+2026-07-18T03:29:48.700Z - node-pty berhasil dimuat.
+2026-07-18T03:29:48.865Z - [resolveShellPath] 'where pwsh' gagal: Command failed: where pwsh
+INFO: Could not find files for the given pattern(s).
+
+2026-07-18T03:29:48.867Z - [resolveShellPath] pwsh.exe tidak ditemukan di lokasi manapun. Fallback ke 'pwsh.exe'
+2026-07-18T03:29:48.867Z - Menjalankan shell: pwsh.exe (cols: 95, rows: 34)
+2026-07-18T03:29:48.875Z - Gagal memulai PTY shell pwsh.exe: File not found: 
+2026-07-18T03:29:58.720Z - Memulai Native Host...
+2026-07-18T03:29:58.731Z - node-pty berhasil dimuat.
+2026-07-18T03:29:58.790Z - Menjalankan shell: cmd.exe (cols: 95, rows: 34)
+2026-07-18T03:33:21.784Z - Mematikan host (stdin end).
+2026-07-18T03:33:21.784Z - Mematikan host (stdin end).
+2026-07-18T03:33:27.852Z - Memulai Native Host...
+2026-07-18T03:33:27.863Z - node-pty berhasil dimuat.
+2026-07-18T03:33:27.937Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-18T04:08:34.481Z - Memulai Native Host...
+2026-07-18T04:08:34.497Z - node-pty berhasil dimuat.
+2026-07-18T04:08:34.524Z - Menjalankan shell: powershell.exe (cols: 192, rows: 34)
+2026-07-18T04:08:39.147Z - Mematikan host (stdin end).
+2026-07-18T04:12:42.778Z - Memulai Native Host...
+2026-07-18T04:12:42.787Z - node-pty berhasil dimuat.
+2026-07-18T04:12:42.886Z - Menjalankan shell: powershell.exe (cols: 189, rows: 32)
+2026-07-18T04:13:02.973Z - Mematikan host (stdin end).
+2026-07-18T04:13:13.244Z - Memulai Native Host...
+2026-07-18T04:13:13.255Z - node-pty berhasil dimuat.
+2026-07-18T04:13:13.392Z - [resolveShellPath] 'where pwsh' gagal: Command failed: where pwsh
+INFO: Could not find files for the given pattern(s).
+
+2026-07-18T04:13:13.392Z - [resolveShellPath] pwsh.exe tidak ditemukan di lokasi manapun. Fallback ke 'pwsh.exe'
+2026-07-18T04:13:13.393Z - Menjalankan shell: pwsh.exe (cols: 185, rows: 28)
+2026-07-18T04:13:13.401Z - Gagal memulai PTY shell pwsh.exe: File not found: 
+2026-07-18T04:34:41.492Z - Memulai Native Host...
+2026-07-18T04:34:41.532Z - node-pty berhasil dimuat.
+2026-07-18T04:34:41.541Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 32)
+2026-07-18T04:34:48.536Z - Memulai Native Host...
+2026-07-18T04:34:48.553Z - node-pty berhasil dimuat.
+2026-07-18T04:34:48.557Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T04:34:48.563Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 28)
+2026-07-18T04:34:55.865Z - Mematikan host (stdin end).
+2026-07-18T04:35:03.004Z - Memulai Native Host...
+2026-07-18T04:35:03.023Z - node-pty berhasil dimuat.
+2026-07-18T04:35:03.026Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T04:35:03.027Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 28)
+2026-07-18T04:35:11.184Z - Mematikan host (stdin end).
+2026-07-18T04:35:16.404Z - Memulai Native Host...
+2026-07-18T04:35:16.423Z - node-pty berhasil dimuat.
+2026-07-18T04:35:16.431Z - Menjalankan shell: C:\WINDOWS\System32\wsl.exe -d Ubuntu (cols: 90, rows: 28)
+2026-07-18T05:06:48.330Z - Mematikan host (stdin end).
+2026-07-18T05:06:48.330Z - Mematikan host (stdin end).
+2026-07-18T05:11:47.245Z - Mematikan host (stdin end).
+2026-07-18T05:11:56.249Z - Memulai Native Host...
+2026-07-18T05:11:56.327Z - node-pty berhasil dimuat.
+2026-07-18T05:11:56.338Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 32)
+2026-07-18T05:12:04.897Z - Mematikan host (stdin end).
+2026-07-18T05:12:11.023Z - Memulai Native Host...
+2026-07-18T05:12:11.088Z - node-pty berhasil dimuat.
+2026-07-18T05:12:11.111Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T05:12:11.115Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 32)
+2026-07-18T05:13:55.479Z - Memulai Native Host...
+2026-07-18T05:13:55.684Z - node-pty berhasil dimuat.
+2026-07-18T05:13:55.744Z - Menjalankan shell: powershell.exe  (cols: 90, rows: 28)
+2026-07-18T05:14:07.763Z - Mematikan host (stdin end).
+2026-07-18T05:20:14.780Z - Memulai Native Host...
+2026-07-18T05:20:14.791Z - node-pty berhasil dimuat.
+2026-07-18T05:20:14.849Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 28)
+2026-07-18T05:20:21.277Z - Memulai Native Host...
+2026-07-18T05:20:21.284Z - node-pty berhasil dimuat.
+2026-07-18T05:20:21.356Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 28)
+2026-07-18T05:20:23.313Z - Mematikan host (stdin end).
+2026-07-18T05:21:07.227Z - Memulai Native Host...
+2026-07-18T05:21:07.236Z - node-pty berhasil dimuat.
+2026-07-18T05:21:07.244Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T05:21:07.244Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 28)
+2026-07-18T05:21:10.291Z - Mematikan host (stdin end).
+2026-07-18T05:21:12.647Z - Memulai Native Host...
+2026-07-18T05:21:12.658Z - node-pty berhasil dimuat.
+2026-07-18T05:21:12.683Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T05:21:12.683Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 28)
+2026-07-18T06:06:42.438Z - Memulai Native Host...
+2026-07-18T06:06:42.450Z - node-pty berhasil dimuat.
+2026-07-18T06:06:42.496Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:06:42.496Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 26)
+2026-07-18T06:06:49.338Z - Memulai Native Host...
+2026-07-18T06:06:49.351Z - node-pty berhasil dimuat.
+2026-07-18T06:06:49.354Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:06:49.354Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 26)
+2026-07-18T06:08:02.886Z - Mematikan host (stdin end).
+2026-07-18T06:08:02.886Z - Mematikan host (stdin end).
+2026-07-18T06:11:44.300Z - Memulai Native Host...
+2026-07-18T06:11:44.307Z - node-pty berhasil dimuat.
+2026-07-18T06:11:44.345Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:11:44.345Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 26)
+2026-07-18T06:13:15.586Z - Memulai Native Host...
+2026-07-18T06:13:15.598Z - node-pty berhasil dimuat.
+2026-07-18T06:13:15.600Z - Menjalankan shell: cmd.exe  (cols: 185, rows: 26)
+2026-07-18T06:13:32.848Z - Mematikan host (stdin end).
+2026-07-18T06:13:32.848Z - Mematikan host (stdin end).
+2026-07-18T06:13:55.616Z - Memulai Native Host...
+2026-07-18T06:13:55.624Z - node-pty berhasil dimuat.
+2026-07-18T06:13:55.666Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:13:55.666Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-18T06:14:02.502Z - Mematikan host (stdin end).
+2026-07-18T06:20:52.855Z - Memulai Native Host...
+2026-07-18T06:20:52.867Z - node-pty berhasil dimuat.
+2026-07-18T06:20:52.897Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:20:52.898Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 26)
+2026-07-18T06:21:08.752Z - Memulai Native Host...
+2026-07-18T06:21:08.761Z - node-pty berhasil dimuat.
+2026-07-18T06:21:08.774Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:21:08.775Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 26)
+2026-07-18T06:22:18.481Z - Mematikan host (stdin end).
+2026-07-18T06:22:18.481Z - Mematikan host (stdin end).
+2026-07-18T06:30:48.116Z - Mematikan host (stdin end).
+2026-07-18T06:30:48.116Z - Mematikan host (stdin end).
+2026-07-18T06:30:48.369Z - Memulai Native Host...
+2026-07-18T06:30:48.381Z - node-pty berhasil dimuat.
+2026-07-18T06:30:48.422Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T06:30:48.422Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-18T06:30:57.368Z - Memulai Native Host...
+2026-07-18T06:30:57.376Z - node-pty berhasil dimuat.
+2026-07-18T06:30:57.406Z - Menjalankan shell: cmd.exe  (cols: 185, rows: 27)
+2026-07-18T06:31:08.878Z - Memulai Native Host...
+2026-07-18T06:31:08.892Z - node-pty berhasil dimuat.
+2026-07-18T06:31:08.900Z - Menjalankan shell: C:\WINDOWS\System32\wsl.exe -d Ubuntu (cols: 185, rows: 27)
+2026-07-18T06:31:18.173Z - Mematikan host (stdin end).
+2026-07-18T06:31:18.172Z - Mematikan host (stdin end).
+2026-07-18T06:31:18.179Z - Mematikan host (stdin end).
+2026-07-18T06:31:26.123Z - Mematikan host (stdin end).
+2026-07-18T06:31:35.005Z - Memulai Native Host...
+2026-07-18T06:31:35.018Z - node-pty berhasil dimuat.
+2026-07-18T06:31:35.065Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 30)
+2026-07-18T06:32:03.097Z - Mematikan host (stdin end).
+2026-07-18T07:58:52.537Z - Memulai Native Host...
+2026-07-18T07:58:52.585Z - node-pty berhasil dimuat.
+2026-07-18T07:58:52.592Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T07:58:52.593Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-18T08:15:12.993Z - Mematikan host (stdin end).
+2026-07-18T08:39:39.627Z - Memulai Native Host...
+2026-07-18T08:39:39.686Z - node-pty berhasil dimuat.
+2026-07-18T08:39:39.693Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 30)
+2026-07-18T08:52:23.459Z - Memulai Native Host...
+2026-07-18T08:52:23.493Z - node-pty berhasil dimuat.
+2026-07-18T08:52:23.500Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T08:52:23.501Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-18T09:06:02.740Z - Memulai Native Host...
+2026-07-18T09:06:02.757Z - node-pty berhasil dimuat.
+2026-07-18T09:06:02.759Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T09:54:03.271Z - Mematikan host (stdin end).
+2026-07-18T09:54:03.782Z - Memulai Native Host...
+2026-07-18T09:54:03.816Z - node-pty berhasil dimuat.
+2026-07-18T09:54:03.823Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T09:58:12.042Z - Mematikan host (stdin end).
+2026-07-18T09:58:12.401Z - Memulai Native Host...
+2026-07-18T09:58:12.412Z - node-pty berhasil dimuat.
+2026-07-18T09:58:12.414Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T10:02:20.433Z - Mematikan host (stdin end).
+2026-07-18T10:02:20.537Z - Mematikan host (stdin end).
+2026-07-18T10:02:20.862Z - Memulai Native Host...
+2026-07-18T10:02:20.886Z - node-pty berhasil dimuat.
+2026-07-18T10:02:20.893Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T10:14:22.480Z - Mematikan host (stdin end).
+2026-07-18T10:14:22.810Z - Memulai Native Host...
+2026-07-18T10:14:22.827Z - node-pty berhasil dimuat.
+2026-07-18T10:14:22.829Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T10:14:26.730Z - Memulai Native Host...
+2026-07-18T10:14:26.745Z - node-pty berhasil dimuat.
+2026-07-18T10:14:26.763Z - Membuka File Explorer di: C:\Users\user
+2026-07-18T10:14:27.210Z - Mematikan host (stdin end).
+2026-07-18T10:21:11.067Z - Mematikan host (stdin end).
+2026-07-18T10:21:11.483Z - Memulai Native Host...
+2026-07-18T10:21:11.514Z - node-pty berhasil dimuat.
+2026-07-18T10:21:11.517Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T10:21:31.847Z - Memulai Native Host...
+2026-07-18T10:21:31.861Z - node-pty berhasil dimuat.
+2026-07-18T10:21:31.879Z - Membuka File Explorer di: C:\Users\user
+2026-07-18T10:21:32.328Z - Mematikan host (stdin end).
+2026-07-18T10:21:41.982Z - Mematikan host (stdin end).
+2026-07-18T10:21:41.982Z - Mematikan host (stdin end).
+2026-07-18T22:18:29.922Z - Memulai Native Host...
+2026-07-18T22:18:29.955Z - node-pty berhasil dimuat.
+2026-07-18T22:18:29.965Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T22:18:29.965Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-18T22:18:34.848Z - Memulai Native Host...
+2026-07-18T22:18:34.864Z - node-pty berhasil dimuat.
+2026-07-18T22:18:34.871Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T22:18:34.871Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-18T22:23:34.803Z - Mematikan host (stdin end).
+2026-07-18T22:23:34.803Z - Mematikan host (stdin end).
+2026-07-18T22:23:57.138Z - Memulai Native Host...
+2026-07-18T22:23:57.153Z - node-pty berhasil dimuat.
+2026-07-18T22:23:57.156Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T22:23:57.156Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-18T22:36:33.289Z - Mematikan host (stdin end).
+2026-07-18T22:38:43.053Z - Memulai Native Host...
+2026-07-18T22:38:43.088Z - node-pty berhasil dimuat.
+2026-07-18T22:38:43.092Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T22:38:43.093Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-18T22:53:55.654Z - Memulai Native Host...
+2026-07-18T22:53:55.694Z - node-pty berhasil dimuat.
+2026-07-18T22:53:55.704Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T22:54:14.592Z - Mematikan host (stdin end).
+2026-07-18T22:54:15.039Z - Memulai Native Host...
+2026-07-18T22:54:15.059Z - node-pty berhasil dimuat.
+2026-07-18T22:54:15.063Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-18T22:54:18.525Z - Mematikan host (stdin end).
+2026-07-18T23:28:26.428Z - Memulai Native Host...
+2026-07-18T23:28:26.486Z - node-pty berhasil dimuat.
+2026-07-18T23:28:26.493Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T23:28:26.494Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-18T23:28:40.107Z - Memulai Native Host...
+2026-07-18T23:28:40.128Z - node-pty berhasil dimuat.
+2026-07-18T23:28:40.157Z - Membuka File Explorer di: C:\Users\user
+2026-07-18T23:28:40.520Z - Mematikan host (stdin end).
+2026-07-18T23:30:29.145Z - Mematikan host (stdin end).
+2026-07-18T23:30:30.055Z - Memulai Native Host...
+2026-07-18T23:30:30.124Z - node-pty berhasil dimuat.
+2026-07-18T23:30:30.139Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T23:30:30.141Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-18T23:41:26.837Z - Mematikan host (stdin end).
+2026-07-18T23:41:27.703Z - Memulai Native Host...
+2026-07-18T23:41:27.762Z - node-pty berhasil dimuat.
+2026-07-18T23:41:27.784Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T23:41:27.785Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-18T23:52:17.941Z - Mematikan host (stdin end).
+2026-07-18T23:52:18.588Z - Memulai Native Host...
+2026-07-18T23:52:18.628Z - node-pty berhasil dimuat.
+2026-07-18T23:52:18.650Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T23:52:18.652Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-18T23:59:35.496Z - Mematikan host (stdin end).
+2026-07-18T23:59:36.175Z - Memulai Native Host...
+2026-07-18T23:59:36.211Z - node-pty berhasil dimuat.
+2026-07-18T23:59:36.242Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-18T23:59:36.242Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 134, rows: 26)
+2026-07-19T00:09:48.971Z - Mematikan host (stdin end).
+2026-07-19T00:09:49.771Z - Memulai Native Host...
+2026-07-19T00:09:49.876Z - node-pty berhasil dimuat.
+2026-07-19T00:09:49.896Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-19T00:09:49.909Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-19T06:52:29.476Z - Memulai Native Host...
+2026-07-19T06:52:29.501Z - node-pty berhasil dimuat.
+2026-07-19T06:52:29.506Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-19T06:52:29.507Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-19T06:52:38.402Z - Memulai Native Host...
+2026-07-19T06:52:38.413Z - node-pty berhasil dimuat.
+2026-07-19T06:52:38.418Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-19T06:52:38.419Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-19T06:57:15.429Z - Mematikan host (stdin end).
+2026-07-19T06:57:15.429Z - Mematikan host (stdin end).
+2026-07-19T06:59:39.244Z - Memulai Native Host...
+2026-07-19T06:59:39.262Z - node-pty berhasil dimuat.
+2026-07-19T06:59:39.273Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-19T06:59:39.273Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-19T07:14:40.045Z - Mematikan host (stdin end).
+2026-07-19T07:35:13.548Z - Memulai Native Host...
+2026-07-19T07:35:13.573Z - node-pty berhasil dimuat.
+2026-07-19T07:35:13.579Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-19T07:35:13.579Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-19T07:37:53.682Z - Mematikan host (stdin end).
+2026-07-20T07:50:37.049Z - Memulai Native Host...
+2026-07-20T07:50:37.077Z - node-pty berhasil dimuat.
+2026-07-20T07:50:37.084Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-20T07:50:37.084Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-20T08:16:48.551Z - Mematikan host (stdin end).
+2026-07-20T08:16:53.846Z - Memulai Native Host...
+2026-07-20T08:16:53.877Z - node-pty berhasil dimuat.
+2026-07-20T08:16:53.881Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-20T08:16:53.882Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-20T08:17:04.016Z - Mematikan host (stdin end).
+2026-07-21T05:07:09.005Z - Memulai Native Host...
+2026-07-21T05:07:09.030Z - node-pty berhasil dimuat.
+2026-07-21T05:07:09.037Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-21T05:07:09.038Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 138, rows: 23)
+2026-07-21T05:07:14.577Z - Memulai Native Host...
+2026-07-21T05:07:14.591Z - node-pty berhasil dimuat.
+2026-07-21T05:07:14.653Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-21T05:07:14.654Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 65, rows: 21)
+2026-07-21T05:11:46.212Z - Mematikan host (stdin end).
+2026-07-21T05:11:46.212Z - Mematikan host (stdin end).
+2026-07-21T05:12:39.246Z - Memulai Native Host...
+2026-07-21T05:12:39.262Z - node-pty berhasil dimuat.
+2026-07-21T05:12:39.273Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-21T05:12:39.274Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 138, rows: 23)
+2026-07-21T05:13:00.057Z - Mematikan host (stdin end).
+2026-07-22T08:50:53.388Z - Memulai Native Host...
+2026-07-22T08:50:53.421Z - node-pty berhasil dimuat.
+2026-07-22T08:50:53.430Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-22T08:50:53.430Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-24T07:33:32.131Z - Memulai Native Host...
+2026-07-24T07:33:32.158Z - node-pty berhasil dimuat.
+2026-07-24T07:33:32.183Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-24T07:33:32.185Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-24T07:33:40.237Z - Memulai Native Host...
+2026-07-24T07:33:40.265Z - node-pty berhasil dimuat.
+2026-07-24T07:33:40.268Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-24T07:33:40.269Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-24T07:37:32.498Z - Mematikan host (stdin end).
+2026-07-24T07:37:32.498Z - Mematikan host (stdin end).
+2026-07-24T07:42:01.527Z - Memulai Native Host...
+2026-07-24T07:42:01.573Z - node-pty berhasil dimuat.
+2026-07-24T07:42:01.583Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-24T07:42:01.584Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-24T07:56:53.195Z - Memulai Native Host...
+2026-07-24T07:56:53.211Z - node-pty berhasil dimuat.
+2026-07-24T07:56:53.257Z - Menjalankan shell: powershell.exe  (cols: 185, rows: 27)
+2026-07-25T09:06:38.155Z - Memulai Native Host...
+2026-07-25T09:06:38.176Z - node-pty berhasil dimuat.
+2026-07-25T09:06:38.181Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T09:06:38.182Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-25T09:06:40.813Z - Memulai Native Host...
+2026-07-25T09:06:40.831Z - node-pty berhasil dimuat.
+2026-07-25T09:06:40.878Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T09:06:40.879Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-25T09:09:11.553Z - Mematikan host (stdin end).
+2026-07-25T09:19:36.500Z - Memulai Native Host...
+2026-07-25T09:19:36.519Z - node-pty berhasil dimuat.
+2026-07-25T09:19:36.537Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T09:19:36.538Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-25T09:19:55.104Z - Mematikan host (stdin end).
+2026-07-25T09:26:27.476Z - Mematikan host (stdin end).
+2026-07-25T09:26:27.766Z - Memulai Native Host...
+2026-07-25T09:26:27.778Z - node-pty berhasil dimuat.
+2026-07-25T09:26:27.793Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T09:26:27.794Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-25T09:32:59.716Z - Memulai Native Host...
+2026-07-25T09:32:59.726Z - node-pty berhasil dimuat.
+2026-07-25T09:32:59.734Z - Membuka File Explorer di: C:\Users\user
+2026-07-25T09:33:00.215Z - Mematikan host (stdin end).
+2026-07-25T09:34:21.424Z - Memulai Native Host...
+2026-07-25T09:34:21.435Z - node-pty berhasil dimuat.
+2026-07-25T09:34:21.444Z - Membuka File Explorer di: C:\Users\user
+2026-07-25T09:34:21.935Z - Mematikan host (stdin end).
+2026-07-25T23:06:52.106Z - Memulai Native Host...
+2026-07-25T23:06:52.136Z - node-pty berhasil dimuat.
+2026-07-25T23:06:52.144Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T23:06:52.144Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-25T23:06:56.736Z - Memulai Native Host...
+2026-07-25T23:06:56.752Z - node-pty berhasil dimuat.
+2026-07-25T23:06:56.783Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T23:06:56.785Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-25T23:08:40.226Z - Mematikan host (stdin end).
+2026-07-25T23:08:40.226Z - Mematikan host (stdin end).
+2026-07-25T23:09:04.784Z - Memulai Native Host...
+2026-07-25T23:09:04.802Z - node-pty berhasil dimuat.
+2026-07-25T23:09:04.805Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-25T23:09:04.805Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-26T01:02:59.174Z - Memulai Native Host...
+2026-07-26T01:02:59.231Z - node-pty berhasil dimuat.
+2026-07-26T01:02:59.239Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-26T01:02:59.240Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-26T12:39:23.709Z - Memulai Native Host...
+2026-07-26T12:39:23.745Z - node-pty berhasil dimuat.
+2026-07-26T12:39:23.754Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-26T12:39:23.754Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-26T12:39:30.364Z - Memulai Native Host...
+2026-07-26T12:39:30.386Z - node-pty berhasil dimuat.
+2026-07-26T12:39:30.392Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-26T12:39:30.392Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-26T12:40:58.221Z - Mematikan host (stdin end).
+2026-07-26T12:40:58.221Z - Mematikan host (stdin end).
+2026-07-27T09:23:16.302Z - Memulai Native Host...
+2026-07-27T09:23:16.323Z - node-pty berhasil dimuat.
+2026-07-27T09:23:16.350Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-27T09:23:16.350Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-27T09:23:30.403Z - Memulai Native Host...
+2026-07-27T09:23:30.417Z - node-pty berhasil dimuat.
+2026-07-27T09:23:30.421Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-27T09:23:30.421Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-07-27T09:27:17.769Z - Memulai Native Host...
+2026-07-27T09:27:17.787Z - node-pty berhasil dimuat.
+2026-07-27T09:27:17.790Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-27T09:27:17.790Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-27T09:36:15.919Z - Mematikan host (stdin end).
+2026-07-27T09:36:15.919Z - Mematikan host (stdin end).
+2026-07-27T09:36:15.919Z - Mematikan host (stdin end).
+2026-07-28T08:17:52.498Z - Memulai Native Host...
+2026-07-28T08:17:52.555Z - node-pty berhasil dimuat.
+2026-07-28T08:17:52.563Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-28T08:17:52.564Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-28T08:17:59.521Z - Memulai Native Host...
+2026-07-28T08:17:59.534Z - node-pty berhasil dimuat.
+2026-07-28T08:17:59.554Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-28T08:17:59.555Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-07-28T08:23:23.806Z - Mematikan host (stdin end).
+2026-07-28T08:23:23.806Z - Mematikan host (stdin end).
+2026-07-28T13:08:34.568Z - Memulai Native Host...
+2026-07-28T13:08:34.588Z - node-pty berhasil dimuat.
+2026-07-28T13:08:34.611Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-28T13:08:34.612Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-28T13:08:40.873Z - Memulai Native Host...
+2026-07-28T13:08:40.888Z - node-pty berhasil dimuat.
+2026-07-28T13:08:40.932Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-28T13:08:40.933Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-07-28T13:14:40.379Z - Mematikan host (stdin end).
+2026-07-28T13:14:40.379Z - Mematikan host (stdin end).
+2026-07-29T07:12:39.720Z - Memulai Native Host...
+2026-07-29T07:12:39.746Z - node-pty berhasil dimuat.
+2026-07-29T07:12:39.752Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-29T07:12:39.752Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-29T07:12:44.436Z - Memulai Native Host...
+2026-07-29T07:12:44.451Z - node-pty berhasil dimuat.
+2026-07-29T07:12:44.502Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-29T07:12:44.502Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-07-29T07:14:02.056Z - Mematikan host (stdin end).
+2026-07-29T07:14:02.056Z - Mematikan host (stdin end).
+2026-07-30T07:16:58.195Z - Memulai Native Host...
+2026-07-30T07:16:58.217Z - node-pty berhasil dimuat.
+2026-07-30T07:16:58.222Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-30T07:16:58.222Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-30T07:17:01.617Z - Memulai Native Host...
+2026-07-30T07:17:01.634Z - node-pty berhasil dimuat.
+2026-07-30T07:17:01.638Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-30T07:17:01.638Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-07-30T07:18:28.474Z - Mematikan host (stdin end).
+2026-07-30T07:18:28.474Z - Mematikan host (stdin end).
+2026-07-31T04:32:33.836Z - Memulai Native Host...
+2026-07-31T04:32:33.865Z - node-pty berhasil dimuat.
+2026-07-31T04:32:33.873Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-31T04:32:33.873Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-31T04:44:37.236Z - Mematikan host (stdin end).
+2026-07-31T04:44:37.586Z - Memulai Native Host...
+2026-07-31T04:44:37.599Z - node-pty berhasil dimuat.
+2026-07-31T04:44:37.602Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-31T04:44:37.602Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-07-31T06:07:56.768Z - Memulai Native Host...
+2026-07-31T06:07:56.817Z - node-pty berhasil dimuat.
+2026-07-31T06:07:56.826Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-31T06:07:56.827Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-07-31T06:08:00.153Z - Memulai Native Host...
+2026-07-31T06:08:00.170Z - node-pty berhasil dimuat.
+2026-07-31T06:08:00.173Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-07-31T06:08:00.174Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-07-31T06:09:08.910Z - Mematikan host (stdin end).
+2026-07-31T06:09:08.910Z - Mematikan host (stdin end).
+2026-08-01T23:40:38.880Z - Memulai Native Host...
+2026-08-01T23:40:38.939Z - node-pty berhasil dimuat.
+2026-08-01T23:40:38.948Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-01T23:40:38.951Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-02T06:19:02.003Z - Memulai Native Host...
+2026-08-02T06:19:02.036Z - node-pty berhasil dimuat.
+2026-08-02T06:19:02.042Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-02T06:19:02.043Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 185, rows: 27)
+2026-08-02T06:19:11.137Z - Memulai Native Host...
+2026-08-02T06:19:11.160Z - node-pty berhasil dimuat.
+2026-08-02T06:19:11.164Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-02T06:19:11.164Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-08-02T06:20:51.220Z - Mematikan host (stdin end).
+2026-08-02T06:20:51.231Z - Mematikan host (stdin end).
+2026-08-02T12:26:24.601Z - Memulai Native Host...
+2026-08-02T12:26:24.627Z - node-pty berhasil dimuat.
+2026-08-02T12:26:24.634Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-02T12:26:24.635Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-04T12:42:37.442Z - Memulai Native Host...
+2026-08-04T12:42:37.499Z - node-pty berhasil dimuat.
+2026-08-04T12:42:37.515Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-04T12:42:37.516Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-06T06:26:48.174Z - Memulai Native Host...
+2026-08-06T06:26:48.210Z - node-pty berhasil dimuat.
+2026-08-06T06:26:48.217Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-06T06:26:48.218Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 145, rows: 25)
+2026-08-06T07:09:15.610Z - Mematikan host (stdin end).
+2026-08-08T23:46:31.855Z - Memulai Native Host...
+2026-08-08T23:46:31.878Z - node-pty berhasil dimuat.
+2026-08-08T23:46:31.887Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-08T23:46:31.887Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-09T00:03:52.569Z - Mematikan host (stdin end).
+2026-08-09T00:03:52.844Z - Memulai Native Host...
+2026-08-09T00:03:52.856Z - node-pty berhasil dimuat.
+2026-08-09T00:03:52.906Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-09T00:03:52.907Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-09T00:47:51.262Z - Memulai Native Host...
+2026-08-09T00:47:51.281Z - node-pty berhasil dimuat.
+2026-08-09T00:47:51.342Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-09T00:47:51.342Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 134, rows: 26)
+2026-08-09T00:52:22.347Z - Memulai Native Host...
+2026-08-09T00:52:22.357Z - node-pty berhasil dimuat.
+2026-08-09T00:52:22.375Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 30)
+2026-08-09T00:52:40.434Z - Mematikan host (stdin end).
+2026-08-09T00:56:10.334Z - Memulai Native Host...
+2026-08-09T00:56:10.346Z - node-pty berhasil dimuat.
+2026-08-09T00:56:10.376Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 30)
+2026-08-09T00:56:12.935Z - Memulai Native Host...
+2026-08-09T00:56:12.944Z - node-pty berhasil dimuat.
+2026-08-09T00:56:12.951Z - Membuka File Explorer di: C:\Users\user
+2026-08-09T00:56:13.443Z - Mematikan host (stdin end).
+2026-08-09T00:56:36.583Z - Mematikan host (stdin end).
+2026-08-09T01:02:48.283Z - Memulai Native Host...
+2026-08-09T01:02:48.295Z - node-pty berhasil dimuat.
+2026-08-09T01:02:48.326Z - Menjalankan shell: powershell.exe  (cols: 189, rows: 30)
+2026-08-09T01:02:52.503Z - Memulai Native Host...
+2026-08-09T01:02:52.515Z - node-pty berhasil dimuat.
+2026-08-09T01:02:52.522Z - Membuka File Explorer di: C:\Users\user
+2026-08-09T01:02:53.009Z - Mematikan host (stdin end).
+2026-08-09T01:03:17.001Z - Mematikan host (stdin end).
+2026-08-10T09:03:25.428Z - Memulai Native Host...
+2026-08-10T09:03:25.460Z - node-pty berhasil dimuat.
+2026-08-10T09:03:25.470Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-10T09:03:25.470Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-10T09:03:28.505Z - Memulai Native Host...
+2026-08-10T09:03:28.520Z - node-pty berhasil dimuat.
+2026-08-10T09:03:28.566Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-10T09:03:28.566Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-08-10T09:06:30.950Z - Mematikan host (stdin end).
+2026-08-10T09:06:30.950Z - Mematikan host (stdin end).
+2026-08-11T09:45:04.341Z - Memulai Native Host...
+2026-08-11T09:45:04.400Z - node-pty berhasil dimuat.
+2026-08-11T09:45:04.409Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-11T09:45:04.409Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-11T09:45:13.573Z - Memulai Native Host...
+2026-08-11T09:45:13.590Z - node-pty berhasil dimuat.
+2026-08-11T09:45:13.592Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-11T09:45:13.593Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-08-11T09:47:11.163Z - Mematikan host (stdin end).
+2026-08-11T09:47:11.163Z - Mematikan host (stdin end).
+2026-08-11T09:50:05.574Z - Memulai Native Host...
+2026-08-11T09:50:05.600Z - node-pty berhasil dimuat.
+2026-08-11T09:50:05.607Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-11T09:50:05.607Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-12T05:27:35.017Z - Memulai Native Host...
+2026-08-12T05:27:35.046Z - node-pty berhasil dimuat.
+2026-08-12T05:27:35.053Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-12T05:27:35.053Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-12T05:27:37.111Z - Mematikan host (stdin end).
+2026-08-12T05:27:44.496Z - Memulai Native Host...
+2026-08-12T05:27:44.520Z - node-pty berhasil dimuat.
+2026-08-12T05:27:44.526Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-12T05:27:44.526Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-12T05:28:15.412Z - Memulai Native Host...
+2026-08-12T05:28:15.440Z - node-pty berhasil dimuat.
+2026-08-12T05:28:15.469Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-12T05:28:15.470Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-08-12T05:28:51.488Z - Mematikan host (stdin end).
+2026-08-12T05:28:51.488Z - Mematikan host (stdin end).
+2026-08-15T16:15:51.658Z - Memulai Native Host...
+2026-08-15T16:15:51.683Z - node-pty berhasil dimuat.
+2026-08-15T16:15:51.697Z - Menjalankan shell: cmd.exe  (cols: 188, rows: 28)
+2026-08-15T16:32:26.646Z - Mematikan host (stdin end).
+2026-08-15T16:32:27.324Z - Memulai Native Host...
+2026-08-15T16:32:27.366Z - node-pty berhasil dimuat.
+2026-08-15T16:32:27.374Z - Menjalankan shell: cmd.exe  (cols: 184, rows: 25)
+2026-08-15T17:12:38.565Z - Mematikan host (stdin end).
+2026-08-16T01:51:52.264Z - Memulai Native Host...
+2026-08-16T01:51:52.299Z - node-pty berhasil dimuat.
+2026-08-16T01:51:52.304Z - Menjalankan shell: cmd.exe  (cols: 188, rows: 28)
+2026-08-16T02:02:01.392Z - Memulai Native Host...
+2026-08-16T02:02:01.405Z - node-pty berhasil dimuat.
+2026-08-16T02:02:01.407Z - Menjalankan shell: C:\WINDOWS\System32\wsl.exe -d Ubuntu (cols: 184, rows: 25)
+2026-08-16T02:02:08.922Z - Mematikan host (stdin end).
+2026-08-16T02:02:12.989Z - Memulai Native Host...
+2026-08-16T02:02:13.002Z - node-pty berhasil dimuat.
+2026-08-16T02:02:13.005Z - Menjalankan shell: cmd.exe  (cols: 184, rows: 25)
+2026-08-16T05:32:14.153Z - Memulai Native Host...
+2026-08-16T05:32:14.254Z - node-pty berhasil dimuat.
+2026-08-16T05:32:14.264Z - Menjalankan shell: cmd.exe  (cols: 188, rows: 28)
+2026-08-17T01:27:08.603Z - Memulai Native Host...
+2026-08-17T01:27:08.643Z - node-pty berhasil dimuat.
+2026-08-17T01:27:08.656Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-17T01:27:08.657Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 184, rows: 25)
+2026-08-17T01:27:14.577Z - Memulai Native Host...
+2026-08-17T01:27:14.593Z - node-pty berhasil dimuat.
+2026-08-17T01:27:14.595Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-17T01:27:14.595Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-17T01:41:29.154Z - Mematikan host (stdin end).
+2026-08-17T01:41:34.598Z - Mematikan host (stdin end).
+2026-08-17T02:44:56.585Z - Mematikan host (stdin end).
+2026-08-17T05:39:49.191Z - Memulai Native Host...
+2026-08-17T05:39:49.328Z - node-pty berhasil dimuat.
+2026-08-17T05:39:49.372Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-17T05:39:49.373Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-17T05:39:51.976Z - Memulai Native Host...
+2026-08-17T05:39:52.092Z - node-pty berhasil dimuat.
+2026-08-17T05:39:52.220Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-17T05:39:52.224Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-17T05:52:09.988Z - Mematikan host (stdin end).
+2026-08-17T05:52:10.002Z - Mematikan host (stdin end).
+2026-08-17T11:23:44.114Z - Memulai Native Host...
+2026-08-17T11:23:44.141Z - node-pty berhasil dimuat.
+2026-08-17T11:23:44.147Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-17T11:23:44.148Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-17T11:23:47.192Z - Memulai Native Host...
+2026-08-17T11:23:47.214Z - node-pty berhasil dimuat.
+2026-08-17T11:23:47.292Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-17T11:23:47.293Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 27)
+2026-08-17T11:25:27.735Z - Mematikan host (stdin end).
+2026-08-17T11:25:27.735Z - Mematikan host (stdin end).
+2026-08-20T01:44:25.935Z - Memulai Native Host...
+2026-08-20T01:44:25.971Z - node-pty berhasil dimuat.
+2026-08-20T01:44:25.978Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T01:44:25.978Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-20T01:45:10.169Z - Memulai Native Host...
+2026-08-20T01:45:10.182Z - node-pty berhasil dimuat.
+2026-08-20T01:45:10.186Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T01:45:10.187Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 184, rows: 25)
+2026-08-20T01:46:32.055Z - Memulai Native Host...
+2026-08-20T01:46:32.071Z - node-pty berhasil dimuat.
+2026-08-20T01:46:32.074Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T01:46:32.075Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-20T01:53:07.588Z - Mematikan host (stdin end).
+2026-08-20T02:01:18.072Z - Mematikan host (stdin end).
+2026-08-20T02:01:18.089Z - Mematikan host (stdin end).
+2026-08-20T04:51:12.031Z - Memulai Native Host...
+2026-08-20T04:51:12.070Z - node-pty berhasil dimuat.
+2026-08-20T04:51:12.077Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T04:51:12.078Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-20T05:51:19.173Z - Mematikan host (stdin end).
+2026-08-20T05:53:37.444Z - Memulai Native Host...
+2026-08-20T05:53:37.493Z - node-pty berhasil dimuat.
+2026-08-20T05:53:37.499Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T05:53:37.499Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-20T05:53:41.193Z - Memulai Native Host...
+2026-08-20T05:53:41.211Z - node-pty berhasil dimuat.
+2026-08-20T05:53:41.214Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T05:53:41.215Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-20T05:55:02.610Z - Mematikan host (stdin end).
+2026-08-20T05:55:02.610Z - Mematikan host (stdin end).
+2026-08-20T06:19:31.710Z - Memulai Native Host...
+2026-08-20T06:19:31.729Z - node-pty berhasil dimuat.
+2026-08-20T06:19:31.751Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T06:19:31.752Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-20T09:29:32.386Z - Mematikan host (stdin end).
+2026-08-20T12:27:41.344Z - Memulai Native Host...
+2026-08-20T12:27:41.386Z - node-pty berhasil dimuat.
+2026-08-20T12:27:41.395Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T12:27:41.395Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-20T12:27:46.179Z - Memulai Native Host...
+2026-08-20T12:27:46.203Z - node-pty berhasil dimuat.
+2026-08-20T12:27:46.206Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-20T12:27:46.206Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-20T12:29:34.254Z - Mematikan host (stdin end).
+2026-08-20T12:29:34.254Z - Mematikan host (stdin end).
+2026-08-21T11:14:31.438Z - Memulai Native Host...
+2026-08-21T11:14:31.503Z - node-pty berhasil dimuat.
+2026-08-21T11:14:31.530Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T11:14:31.531Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-21T11:14:38.712Z - Memulai Native Host...
+2026-08-21T11:14:38.727Z - node-pty berhasil dimuat.
+2026-08-21T11:14:38.730Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T11:14:38.731Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 92, rows: 26)
+2026-08-21T11:16:07.488Z - Mematikan host (stdin end).
+2026-08-21T11:16:07.507Z - Mematikan host (stdin end).
+2026-08-21T11:29:50.039Z - Memulai Native Host...
+2026-08-21T11:29:50.119Z - node-pty berhasil dimuat.
+2026-08-21T11:29:50.127Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T11:29:50.128Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-21T11:33:07.243Z - Mematikan host (stdin end).
+2026-08-21T13:06:12.646Z - Memulai Native Host...
+2026-08-21T13:06:12.703Z - node-pty berhasil dimuat.
+2026-08-21T13:06:12.712Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:06:12.712Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-21T13:06:19.777Z - Memulai Native Host...
+2026-08-21T13:06:19.792Z - node-pty berhasil dimuat.
+2026-08-21T13:06:19.795Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:06:19.795Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-21T13:07:51.017Z - Mematikan host (stdin end).
+2026-08-21T13:07:51.018Z - Mematikan host (stdin end).
+2026-08-21T13:10:05.469Z - Memulai Native Host...
+2026-08-21T13:10:05.527Z - node-pty berhasil dimuat.
+2026-08-21T13:10:05.541Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:10:05.542Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-21T13:10:08.328Z - Memulai Native Host...
+2026-08-21T13:10:08.374Z - node-pty berhasil dimuat.
+2026-08-21T13:10:08.381Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:10:08.383Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-21T13:25:02.124Z - Memulai Native Host...
+2026-08-21T13:25:02.177Z - node-pty berhasil dimuat.
+2026-08-21T13:25:02.202Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:25:02.203Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-21T13:25:04.920Z - Mematikan host (stdin end).
+2026-08-21T13:26:55.760Z - Memulai Native Host...
+2026-08-21T13:26:55.788Z - node-pty berhasil dimuat.
+2026-08-21T13:26:55.792Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:26:55.793Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-21T13:26:59.121Z - Memulai Native Host...
+2026-08-21T13:26:59.139Z - node-pty berhasil dimuat.
+2026-08-21T13:26:59.142Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T13:26:59.142Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-08-21T23:58:06.839Z - Memulai Native Host...
+2026-08-21T23:58:06.934Z - node-pty berhasil dimuat.
+2026-08-21T23:58:06.952Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T23:58:06.952Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-21T23:58:12.508Z - Memulai Native Host...
+2026-08-21T23:58:12.537Z - node-pty berhasil dimuat.
+2026-08-21T23:58:12.549Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-21T23:58:12.550Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-08-21T23:59:27.352Z - Mematikan host (stdin end).
+2026-08-21T23:59:27.351Z - Mematikan host (stdin end).
+2026-08-22T01:44:02.289Z - Memulai Native Host...
+2026-08-22T01:44:02.321Z - node-pty berhasil dimuat.
+2026-08-22T01:44:02.327Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T01:44:02.327Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-22T02:06:30.860Z - Memulai Native Host...
+2026-08-22T02:06:30.882Z - node-pty berhasil dimuat.
+2026-08-22T02:06:30.898Z - Membuka File Explorer di: C:\Users\user
+2026-08-22T02:06:31.309Z - Mematikan host (stdin end).
+2026-08-22T04:04:00.966Z - Memulai Native Host...
+2026-08-22T04:04:01.046Z - node-pty berhasil dimuat.
+2026-08-22T04:04:01.060Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T04:04:01.061Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-22T06:27:14.419Z - Mematikan host (stdin end).
+2026-08-22T06:27:14.461Z - Mematikan host (stdin end).
+2026-08-22T06:43:11.449Z - Memulai Native Host...
+2026-08-22T06:43:11.545Z - node-pty berhasil dimuat.
+2026-08-22T06:43:11.567Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T06:43:11.570Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-22T06:43:19.498Z - Memulai Native Host...
+2026-08-22T06:43:19.542Z - node-pty berhasil dimuat.
+2026-08-22T06:43:19.548Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T06:43:19.548Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-08-22T06:52:59.591Z - Mematikan host (stdin end).
+2026-08-22T06:52:59.591Z - Mematikan host (stdin end).
+2026-08-22T08:45:12.581Z - Memulai Native Host...
+2026-08-22T08:45:12.630Z - node-pty berhasil dimuat.
+2026-08-22T08:45:12.640Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T08:45:12.640Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-22T08:45:16.074Z - Memulai Native Host...
+2026-08-22T08:45:16.091Z - node-pty berhasil dimuat.
+2026-08-22T08:45:16.100Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T08:45:16.101Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-08-22T08:47:31.637Z - Mematikan host (stdin end).
+2026-08-22T08:47:31.637Z - Mematikan host (stdin end).
+2026-08-22T12:50:51.230Z - Memulai Native Host...
+2026-08-22T12:50:51.298Z - node-pty berhasil dimuat.
+2026-08-22T12:50:51.316Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-22T12:50:51.317Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-22T12:53:23.595Z - Mematikan host (stdin end).
+2026-08-22T12:53:34.165Z - Memulai Native Host...
+2026-08-22T12:53:34.181Z - node-pty berhasil dimuat.
+2026-08-22T12:53:34.227Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 28)
+2026-08-23T00:14:13.109Z - Memulai Native Host...
+2026-08-23T00:14:13.183Z - node-pty berhasil dimuat.
+2026-08-23T00:14:13.192Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 26)
+2026-08-23T01:37:57.283Z - Memulai Native Host...
+2026-08-23T01:37:57.315Z - node-pty berhasil dimuat.
+2026-08-23T01:37:57.318Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T01:37:57.319Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-23T01:47:25.664Z - Mematikan host (stdin end).
+2026-08-23T01:53:26.965Z - Mematikan host (stdin end).
+2026-08-23T01:53:27.265Z - Memulai Native Host...
+2026-08-23T01:53:27.276Z - node-pty berhasil dimuat.
+2026-08-23T01:53:27.300Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 26)
+2026-08-23T02:00:56.317Z - Memulai Native Host...
+2026-08-23T02:00:56.365Z - node-pty berhasil dimuat.
+2026-08-23T02:00:56.374Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T02:00:56.375Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 25)
+2026-08-23T02:01:02.478Z - Memulai Native Host...
+2026-08-23T02:01:02.518Z - node-pty berhasil dimuat.
+2026-08-23T02:01:02.531Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T02:01:02.533Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-08-23T03:46:43.338Z - Mematikan host (stdin end).
+2026-08-23T03:46:43.338Z - Mematikan host (stdin end).
+2026-08-23T03:48:03.906Z - Memulai Native Host...
+2026-08-23T03:48:03.924Z - node-pty berhasil dimuat.
+2026-08-23T03:48:03.927Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T03:48:03.927Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 25)
+2026-08-23T03:50:23.426Z - Mematikan host (stdin end).
+2026-08-23T05:57:48.828Z - Memulai Native Host...
+2026-08-23T05:57:48.866Z - node-pty berhasil dimuat.
+2026-08-23T05:57:48.869Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 26)
+2026-08-23T06:03:11.758Z - Mematikan host (stdin end).
+2026-08-23T06:03:12.081Z - Memulai Native Host...
+2026-08-23T06:03:12.090Z - node-pty berhasil dimuat.
+2026-08-23T06:03:12.096Z - Menjalankan shell: powershell.exe  (cols: 183, rows: 23)
+2026-08-23T06:09:34.629Z - Memulai Native Host...
+2026-08-23T06:09:34.654Z - node-pty berhasil dimuat.
+2026-08-23T06:09:34.659Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T06:09:34.661Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-23T07:44:47.186Z - Mematikan host (stdin end).
+2026-08-23T07:44:51.928Z - Memulai Native Host...
+2026-08-23T07:44:51.971Z - node-pty berhasil dimuat.
+2026-08-23T07:44:51.978Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T07:44:51.978Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-23T07:47:58.939Z - Memulai Native Host...
+2026-08-23T07:47:58.947Z - node-pty berhasil dimuat.
+2026-08-23T07:47:58.964Z - Membuka File Explorer di: C:\Users\user
+2026-08-23T07:47:59.423Z - Mematikan host (stdin end).
+2026-08-23T07:57:50.193Z - Memulai Native Host...
+2026-08-23T07:57:50.227Z - node-pty berhasil dimuat.
+2026-08-23T07:57:50.237Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-23T07:57:50.238Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 25)
+2026-08-23T07:58:04.961Z - Mematikan host (stdin end).
+2026-08-23T08:39:10.099Z - Mematikan host (stdin end).
+2026-08-23T11:02:05.779Z - Memulai Native Host...
+2026-08-23T11:02:05.829Z - node-pty berhasil dimuat.
+2026-08-23T11:02:05.837Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 26)
+2026-08-24T00:25:32.670Z - Memulai Native Host...
+2026-08-24T00:25:32.701Z - node-pty berhasil dimuat.
+2026-08-24T00:25:32.707Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 26)
+2026-08-24T03:01:57.373Z - Memulai Native Host...
+2026-08-24T03:01:57.411Z - node-pty berhasil dimuat.
+2026-08-24T03:01:57.417Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-24T03:01:57.417Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-24T03:01:59.078Z - Mematikan host (stdin end).
+2026-08-24T03:02:14.730Z - Mematikan host (stdin end).
+2026-08-24T03:02:15.034Z - Memulai Native Host...
+2026-08-24T03:02:15.048Z - node-pty berhasil dimuat.
+2026-08-24T03:02:15.075Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 26)
+2026-08-24T03:03:50.134Z - Memulai Native Host...
+2026-08-24T03:03:50.149Z - node-pty berhasil dimuat.
+2026-08-24T03:03:50.152Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-24T03:03:50.152Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-24T03:03:55.301Z - Memulai Native Host...
+2026-08-24T03:03:55.329Z - node-pty berhasil dimuat.
+2026-08-24T03:03:55.333Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-24T03:03:55.334Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-08-24T03:06:39.117Z - Mematikan host (stdin end).
+2026-08-24T03:06:39.117Z - Mematikan host (stdin end).
+2026-08-24T03:06:39.117Z - Mematikan host (stdin end).
+2026-08-24T03:06:40.519Z - Memulai Native Host...
+2026-08-24T03:06:40.533Z - node-pty berhasil dimuat.
+2026-08-24T03:06:40.535Z - Menjalankan shell: powershell.exe  (cols: 183, rows: 23)
+2026-08-24T03:07:01.944Z - Memulai Native Host...
+2026-08-24T03:07:01.961Z - node-pty berhasil dimuat.
+2026-08-24T03:07:01.964Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-24T03:07:01.964Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-24T05:26:57.836Z - Memulai Native Host...
+2026-08-24T05:26:57.885Z - node-pty berhasil dimuat.
+2026-08-24T05:26:57.889Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 28)
+2026-08-24T05:29:50.104Z - Memulai Native Host...
+2026-08-24T05:29:50.125Z - node-pty berhasil dimuat.
+2026-08-24T05:29:50.131Z - Menjalankan shell: cmd.exe  (cols: 183, rows: 25)
+2026-08-24T05:41:17.680Z - Mematikan host (stdin end).
+2026-08-24T05:41:17.680Z - Mematikan host (stdin end).
+2026-08-24T05:41:17.940Z - Memulai Native Host...
+2026-08-24T05:41:17.954Z - node-pty berhasil dimuat.
+2026-08-24T05:41:18.012Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 28)
+2026-08-24T05:41:28.123Z - Memulai Native Host...
+2026-08-24T05:41:28.136Z - node-pty berhasil dimuat.
+2026-08-24T05:41:28.180Z - Menjalankan shell: cmd.exe  (cols: 183, rows: 25)
+2026-08-24T05:41:29.985Z - Mematikan host (stdin end).
+2026-08-24T09:44:01.441Z - Memulai Native Host...
+2026-08-24T09:44:01.480Z - node-pty berhasil dimuat.
+2026-08-24T09:44:01.485Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-24T09:44:01.485Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-25T06:22:38.333Z - Memulai Native Host...
+2026-08-25T06:22:38.365Z - node-pty berhasil dimuat.
+2026-08-25T06:22:38.370Z - Menjalankan shell: powershell.exe  (cols: 188, rows: 28)
+2026-08-25T07:45:21.261Z - Memulai Native Host...
+2026-08-25T07:45:21.306Z - node-pty berhasil dimuat.
+2026-08-25T07:45:21.312Z - Menjalankan shell: powershell.exe  (cols: 125, rows: 26)
+2026-08-25T07:45:28.962Z - Memulai Native Host...
+2026-08-25T07:45:28.980Z - node-pty berhasil dimuat.
+2026-08-25T07:45:28.984Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-25T07:45:28.984Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 59, rows: 23)
+2026-08-25T07:54:45.632Z - Mematikan host (stdin end).
+2026-08-25T07:54:49.849Z - Memulai Native Host...
+2026-08-25T07:54:49.867Z - node-pty berhasil dimuat.
+2026-08-25T07:54:49.873Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-25T07:54:49.873Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-25T07:55:53.098Z - Mematikan host (stdin end).
+2026-08-25T07:55:53.098Z - Mematikan host (stdin end).
+2026-08-25T12:30:02.628Z - Memulai Native Host...
+2026-08-25T12:30:02.679Z - node-pty berhasil dimuat.
+2026-08-25T12:30:02.693Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-25T12:30:02.693Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-25T12:30:22.460Z - Mematikan host (stdin end).
+2026-08-25T12:30:22.854Z - Memulai Native Host...
+2026-08-25T12:30:22.873Z - node-pty berhasil dimuat.
+2026-08-25T12:30:22.877Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-25T12:30:22.878Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-08-25T12:39:34.222Z - Mematikan host (stdin end).
+2026-08-25T12:39:45.445Z - Memulai Native Host...
+2026-08-25T12:39:45.477Z - node-pty berhasil dimuat.
+2026-08-25T12:39:45.487Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-25T12:39:45.488Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-25T12:46:19.845Z - Mematikan host (stdin end).
+2026-08-26T06:29:25.514Z - Memulai Native Host...
+2026-08-26T06:29:25.569Z - node-pty berhasil dimuat.
+2026-08-26T06:29:25.583Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-26T06:29:25.584Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-26T06:31:03.973Z - Mematikan host (stdin end).
+2026-08-27T00:48:03.815Z - Memulai Native Host...
+2026-08-27T00:48:03.870Z - node-pty berhasil dimuat.
+2026-08-27T00:48:03.885Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-27T00:48:03.886Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 189, rows: 30)
+2026-08-27T00:48:17.306Z - Memulai Native Host...
+2026-08-27T00:48:17.320Z - node-pty berhasil dimuat.
+2026-08-27T00:48:17.369Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-27T00:48:17.369Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 93, rows: 30)
+2026-08-28T01:28:16.603Z - Memulai Native Host...
+2026-08-28T01:28:16.643Z - node-pty berhasil dimuat.
+2026-08-28T01:28:16.650Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-28T01:28:16.650Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-28T02:07:56.537Z - Mematikan host (stdin end).
+2026-08-28T02:08:22.262Z - Memulai Native Host...
+2026-08-28T02:08:22.326Z - node-pty berhasil dimuat.
+2026-08-28T02:08:22.335Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-28T02:08:22.339Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-08-28T03:03:40.050Z - Memulai Native Host...
+2026-08-28T03:03:40.105Z - node-pty berhasil dimuat.
+2026-08-28T03:03:40.111Z - Menjalankan shell: cmd.exe  (cols: 183, rows: 25)
+2026-08-28T11:20:35.787Z - Memulai Native Host...
+2026-08-28T11:20:35.869Z - node-pty berhasil dimuat.
+2026-08-28T11:20:35.877Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-28T11:20:35.878Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-28T14:40:31.849Z - Memulai Native Host...
+2026-08-28T14:40:31.925Z - node-pty berhasil dimuat.
+2026-08-28T14:40:31.943Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-28T14:40:31.944Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-29T02:43:14.496Z - Memulai Native Host...
+2026-08-29T02:43:14.534Z - node-pty berhasil dimuat.
+2026-08-29T02:43:14.541Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-29T02:43:14.542Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-08-31T06:27:24.330Z - Memulai Native Host...
+2026-08-31T06:27:24.389Z - node-pty berhasil dimuat.
+2026-08-31T06:27:24.403Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-08-31T06:27:24.404Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-02T11:41:59.235Z - Memulai Native Host...
+2026-09-02T11:41:59.270Z - node-pty berhasil dimuat.
+2026-09-02T11:41:59.281Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-02T11:41:59.281Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-02T11:42:06.373Z - Memulai Native Host...
+2026-09-02T11:42:06.395Z - node-pty berhasil dimuat.
+2026-09-02T11:42:06.400Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-02T11:42:06.400Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-09-02T11:43:59.452Z - Memulai Native Host...
+2026-09-02T11:43:59.483Z - node-pty berhasil dimuat.
+2026-09-02T11:43:59.488Z - Menjalankan shell: powershell.exe  (cols: 183, rows: 25)
+2026-09-02T11:44:01.227Z - Mematikan host (stdin end).
+2026-09-02T11:44:01.227Z - Mematikan host (stdin end).
+2026-09-03T08:47:23.847Z - Memulai Native Host...
+2026-09-03T08:47:23.879Z - node-pty berhasil dimuat.
+2026-09-03T08:47:23.888Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-03T08:47:23.888Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-05T08:53:11.817Z - Memulai Native Host...
+2026-09-05T08:53:11.867Z - node-pty berhasil dimuat.
+2026-09-05T08:53:11.878Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-05T08:53:11.879Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-06T03:01:05.893Z - Memulai Native Host...
+2026-09-06T03:01:05.931Z - node-pty berhasil dimuat.
+2026-09-06T03:01:05.938Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-06T03:01:05.939Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-06T03:04:11.712Z - Memulai Native Host...
+2026-09-06T03:04:11.731Z - node-pty berhasil dimuat.
+2026-09-06T03:04:11.739Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-06T03:04:11.742Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-09-06T03:06:05.684Z - Memulai Native Host...
+2026-09-06T03:06:05.713Z - node-pty berhasil dimuat.
+2026-09-06T03:06:05.717Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-06T03:06:05.718Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 25)
+2026-09-06T03:06:08.309Z - Mematikan host (stdin end).
+2026-09-06T03:06:08.309Z - Mematikan host (stdin end).
+2026-09-07T11:18:22.298Z - Memulai Native Host...
+2026-09-07T11:18:22.334Z - node-pty berhasil dimuat.
+2026-09-07T11:18:22.340Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-07T11:18:22.340Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-07T19:20:58.290Z - Memulai Native Host...
+2026-09-07T19:20:58.326Z - node-pty berhasil dimuat.
+2026-09-07T19:20:58.332Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-07T19:20:58.333Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-07T20:06:53.440Z - Mematikan host (stdin end).
+2026-09-08T08:53:13.196Z - Memulai Native Host...
+2026-09-08T08:53:13.233Z - node-pty berhasil dimuat.
+2026-09-08T08:53:13.243Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-08T08:53:13.244Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 125, rows: 27)
+2026-09-09T06:03:21.830Z - Memulai Native Host...
+2026-09-09T06:03:21.864Z - node-pty berhasil dimuat.
+2026-09-09T06:03:21.876Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-09T06:03:21.876Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-09T06:03:25.624Z - Memulai Native Host...
+2026-09-09T06:03:25.644Z - node-pty berhasil dimuat.
+2026-09-09T06:03:25.647Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-09T06:03:25.647Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-09-09T06:05:16.808Z - Memulai Native Host...
+2026-09-09T06:05:16.823Z - node-pty berhasil dimuat.
+2026-09-09T06:05:16.827Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-09T06:05:16.827Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 23)
+2026-09-09T06:05:19.991Z - Mematikan host (stdin end).
+2026-09-09T06:05:19.991Z - Mematikan host (stdin end).
+2026-09-11T07:24:06.151Z - Memulai Native Host...
+2026-09-11T07:24:06.303Z - node-pty berhasil dimuat.
+2026-09-11T07:24:06.329Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-11T07:24:06.332Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-13T01:17:58.270Z - Memulai Native Host...
+2026-09-13T01:17:58.320Z - node-pty berhasil dimuat.
+2026-09-13T01:17:58.333Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-13T01:17:58.333Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-13T01:37:37.142Z - Mematikan host (stdin end).
+2026-09-13T02:09:54.263Z - Memulai Native Host...
+2026-09-13T02:09:54.344Z - node-pty berhasil dimuat.
+2026-09-13T02:09:54.373Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-13T02:09:54.374Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-13T02:45:21.413Z - Memulai Native Host...
+2026-09-13T02:45:21.442Z - node-pty berhasil dimuat.
+2026-09-13T02:45:21.445Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-13T02:45:21.445Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 183, rows: 25)
+2026-09-13T08:21:13.866Z - Memulai Native Host...
+2026-09-13T08:21:14.004Z - node-pty berhasil dimuat.
+2026-09-13T08:21:14.056Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-13T08:21:14.058Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-13T09:48:03.234Z - Mematikan host (stdin end).
+2026-09-14T06:26:49.769Z - Memulai Native Host...
+2026-09-14T06:26:49.874Z - node-pty berhasil dimuat.
+2026-09-14T06:26:49.918Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-14T06:26:49.924Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-14T06:28:53.025Z - Mematikan host (stdin end).
+2026-09-14T07:09:38.041Z - Memulai Native Host...
+2026-09-14T07:09:38.469Z - node-pty berhasil dimuat.
+2026-09-14T07:09:38.559Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-14T07:09:38.561Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-15T10:39:38.732Z - Memulai Native Host...
+2026-09-15T10:39:38.836Z - node-pty berhasil dimuat.
+2026-09-15T10:39:38.855Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-15T10:39:38.864Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-16T07:02:20.520Z - Memulai Native Host...
+2026-09-16T07:02:20.555Z - node-pty berhasil dimuat.
+2026-09-16T07:02:20.559Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-16T07:02:20.559Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-16T07:02:26.549Z - Memulai Native Host...
+2026-09-16T07:02:26.586Z - node-pty berhasil dimuat.
+2026-09-16T07:02:26.592Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-16T07:02:26.593Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 25)
+2026-09-16T07:04:07.251Z - Mematikan host (stdin end).
+2026-09-16T07:04:07.285Z - Mematikan host (stdin end).
+2026-09-16T07:07:50.124Z - Memulai Native Host...
+2026-09-16T07:07:50.217Z - node-pty berhasil dimuat.
+2026-09-16T07:07:50.241Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-16T07:07:50.241Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-17T08:23:24.876Z - Memulai Native Host...
+2026-09-17T08:23:24.905Z - node-pty berhasil dimuat.
+2026-09-17T08:23:24.913Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-17T08:23:24.914Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-17T10:58:01.648Z - Mematikan host (stdin end).
+2026-09-17T12:14:34.602Z - Memulai Native Host...
+2026-09-17T12:14:34.700Z - node-pty berhasil dimuat.
+2026-09-17T12:14:34.720Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-17T12:14:34.721Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-17T12:35:11.368Z - Mematikan host (stdin end).
+2026-09-18T07:15:22.452Z - Memulai Native Host...
+2026-09-18T07:15:22.521Z - node-pty berhasil dimuat.
+2026-09-18T07:15:22.540Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-18T07:15:22.541Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-19T07:24:57.335Z - Memulai Native Host...
+2026-09-19T07:24:57.449Z - node-pty berhasil dimuat.
+2026-09-19T07:24:57.495Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-19T07:24:57.495Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-19T07:50:11.807Z - Mematikan host (stdin end).
+2026-09-19T08:05:18.299Z - Memulai Native Host...
+2026-09-19T08:05:18.479Z - node-pty berhasil dimuat.
+2026-09-19T08:05:18.492Z - Mematikan host (stdin end).
+2026-09-20T00:50:26.905Z - Memulai Native Host...
+2026-09-20T00:50:26.976Z - node-pty berhasil dimuat.
+2026-09-20T00:50:26.990Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-20T00:50:26.992Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 130, rows: 25)
+2026-09-20T01:01:30.655Z - Mematikan host (stdin end).
+2026-09-20T10:30:55.053Z - Memulai Native Host...
+2026-09-20T10:30:55.129Z - node-pty berhasil dimuat.
+2026-09-20T10:30:55.153Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-20T10:30:55.157Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-20T10:30:57.613Z - Memulai Native Host...
+2026-09-20T10:30:57.644Z - node-pty berhasil dimuat.
+2026-09-20T10:30:57.654Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-20T10:30:57.656Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-09-20T10:40:38.989Z - Mematikan host (stdin end).
+2026-09-20T10:40:38.994Z - Mematikan host (stdin end).
+2026-09-20T10:41:01.922Z - Memulai Native Host...
+2026-09-20T10:41:01.942Z - node-pty berhasil dimuat.
+2026-09-20T10:41:01.988Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-20T10:41:01.989Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-20T11:18:50.560Z - Mematikan host (stdin end).
+2026-09-22T07:26:22.713Z - Memulai Native Host...
+2026-09-22T07:26:22.786Z - node-pty berhasil dimuat.
+2026-09-22T07:26:22.813Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-22T07:26:22.813Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-22T07:26:25.621Z - Memulai Native Host...
+2026-09-22T07:26:25.650Z - node-pty berhasil dimuat.
+2026-09-22T07:26:25.654Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-22T07:26:25.654Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 92, rows: 26)
+2026-09-22T07:30:23.634Z - Mematikan host (stdin end).
+2026-09-22T07:30:23.634Z - Mematikan host (stdin end).
+2026-09-23T09:31:58.388Z - Memulai Native Host...
+2026-09-23T09:31:58.421Z - node-pty berhasil dimuat.
+2026-09-23T09:31:58.427Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-23T09:31:58.427Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 26)
+2026-09-23T09:32:01.376Z - Memulai Native Host...
+2026-09-23T09:32:01.390Z - node-pty berhasil dimuat.
+2026-09-23T09:32:01.393Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-23T09:32:01.393Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 23)
+2026-09-23T09:36:10.691Z - Mematikan host (stdin end).
+2026-09-23T09:36:10.691Z - Mematikan host (stdin end).
+2026-09-25T04:47:53.121Z - Memulai Native Host...
+2026-09-25T04:47:53.170Z - node-pty berhasil dimuat.
+2026-09-25T04:47:53.178Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-25T04:47:53.179Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 188, rows: 28)
+2026-09-25T04:57:52.970Z - Mematikan host (stdin end).
+2026-09-26T11:37:01.652Z - Memulai Native Host...
+2026-09-26T11:37:01.673Z - node-pty berhasil dimuat.
+2026-09-26T11:37:01.829Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-26T11:37:01.830Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 29)
+2026-09-26T13:20:40.634Z - Mematikan host (stdin end).
+2026-09-27T05:36:16.413Z - Memulai Native Host...
+2026-09-27T05:36:16.449Z - node-pty berhasil dimuat.
+2026-09-27T05:36:16.456Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T05:36:16.457Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 32)
+2026-09-27T06:25:51.622Z - Memulai Native Host...
+2026-09-27T06:25:51.646Z - node-pty berhasil dimuat.
+2026-09-27T06:25:51.650Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T06:25:51.650Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 155, rows: 28)
+2026-09-27T07:09:28.920Z - Mematikan host (stdin end).
+2026-09-27T07:09:28.921Z - Mematikan host (stdin end).
+2026-09-27T07:41:03.519Z - Memulai Native Host...
+2026-09-27T07:41:03.553Z - node-pty berhasil dimuat.
+2026-09-27T07:41:03.562Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T07:41:03.563Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 32)
+2026-09-27T07:56:18.282Z - Memulai Native Host...
+2026-09-27T07:56:18.303Z - node-pty berhasil dimuat.
+2026-09-27T07:56:18.344Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T07:56:18.345Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 155, rows: 28)
+2026-09-27T07:56:35.395Z - Mematikan host (stdin end).
+2026-09-27T08:16:18.617Z - Memulai Native Host...
+2026-09-27T08:16:18.636Z - node-pty berhasil dimuat.
+2026-09-27T08:16:18.644Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T08:16:18.644Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 155, rows: 28)
+2026-09-27T09:09:23.792Z - Mematikan host (stdin end).
+2026-09-27T09:09:23.796Z - Mematikan host (stdin end).
+2026-09-27T10:48:55.310Z - Memulai Native Host...
+2026-09-27T10:48:55.344Z - node-pty berhasil dimuat.
+2026-09-27T10:48:55.364Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T10:48:55.364Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 32)
+2026-09-27T10:49:01.202Z - Memulai Native Host...
+2026-09-27T10:49:01.224Z - node-pty berhasil dimuat.
+2026-09-27T10:49:01.227Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T10:49:01.228Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 90, rows: 32)
+2026-09-27T11:00:35.177Z - Mematikan host (stdin end).
+2026-09-27T11:00:35.177Z - Mematikan host (stdin end).
+2026-09-27T11:02:34.675Z - Memulai Native Host...
+2026-09-27T11:02:34.694Z - node-pty berhasil dimuat.
+2026-09-27T11:02:34.700Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T11:02:34.701Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 32)
+2026-09-27T11:09:42.334Z - Memulai Native Host...
+2026-09-27T11:09:42.343Z - node-pty berhasil dimuat.
+2026-09-27T11:09:42.382Z - Menjalankan shell: powershell.exe  (cols: 155, rows: 28)
+2026-09-27T11:13:58.586Z - Memulai Native Host...
+2026-09-27T11:13:58.595Z - node-pty berhasil dimuat.
+2026-09-27T11:13:58.603Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T11:13:58.604Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 76, rows: 28)
+2026-09-27T11:34:31.456Z - Mematikan host (stdin end).
+2026-09-27T11:34:31.456Z - Mematikan host (stdin end).
+2026-09-27T11:34:36.238Z - Memulai Native Host...
+2026-09-27T11:34:36.269Z - node-pty berhasil dimuat.
+2026-09-27T11:34:36.273Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-27T11:34:36.273Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 155, rows: 28)
+2026-09-27T11:51:16.985Z - Mematikan host (stdin end).
+2026-09-27T11:51:16.985Z - Mematikan host (stdin end).
+2026-09-28T11:46:30.093Z - Memulai Native Host...
+2026-09-28T11:46:30.118Z - node-pty berhasil dimuat.
+2026-09-28T11:46:30.121Z - Menjalankan shell: cmd.exe  (cols: 159, rows: 32)
+2026-09-28T12:25:37.369Z - Mematikan host (stdin end).
+2026-09-28T12:36:09.067Z - Memulai Native Host...
+2026-09-28T12:36:09.086Z - node-pty berhasil dimuat.
+2026-09-28T12:36:09.111Z - Menjalankan shell: powershell.exe  (cols: 159, rows: 32)
+2026-09-28T12:40:46.701Z - Mematikan host (stdin end).
+2026-09-29T02:56:53.790Z - Memulai Native Host...
+2026-09-29T02:56:53.827Z - node-pty berhasil dimuat.
+2026-09-29T02:56:53.842Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-29T02:56:53.843Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 32)
+2026-09-29T08:02:20.595Z - Memulai Native Host...
+2026-09-29T08:02:20.624Z - node-pty berhasil dimuat.
+2026-09-29T08:02:20.629Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-29T08:02:20.629Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 159, rows: 32)
+2026-09-29T09:14:15.988Z - Mematikan host (stdin end).
+2026-09-29T11:13:26.198Z - Memulai Native Host...
+2026-09-29T11:13:26.227Z - node-pty berhasil dimuat.
+2026-09-29T11:13:26.230Z - Menjalankan shell: cmd.exe  (cols: 159, rows: 32)
+2026-09-29T11:13:37.489Z - Memulai Native Host...
+2026-09-29T11:13:37.500Z - node-pty berhasil dimuat.
+2026-09-29T11:13:37.527Z - Menjalankan shell: cmd.exe  (cols: 76, rows: 28)
+2026-09-29T11:14:50.355Z - Mematikan host (stdin end).
+2026-09-29T11:15:22.031Z - Mematikan host (stdin end).
+2026-09-29T11:18:48.800Z - Memulai Native Host...
+2026-09-29T11:18:48.970Z - node-pty berhasil dimuat.
+2026-09-29T11:18:48.983Z - Menjalankan shell: cmd.exe  (cols: 159, rows: 32)
+2026-09-29T11:19:14.022Z - Memulai Native Host...
+2026-09-29T11:19:14.039Z - node-pty berhasil dimuat.
+2026-09-29T11:19:14.041Z - Menjalankan shell: C:\WINDOWS\System32\wsl.exe -d Ubuntu (cols: 76, rows: 28)
+2026-09-29T11:19:16.478Z - Proses shell berakhir.
+2026-09-29T11:19:29.373Z - Mematikan host (stdin end).
+2026-09-29T11:19:50.812Z - Memulai Native Host...
+2026-09-29T11:19:51.026Z - node-pty berhasil dimuat.
+2026-09-29T11:19:51.060Z - Menjalankan shell: cmd.exe  (cols: 159, rows: 32)
+2026-09-29T11:19:58.885Z - Memulai Native Host...
+2026-09-29T11:19:58.965Z - node-pty berhasil dimuat.
+2026-09-29T11:19:58.978Z - [resolveShellPath] Menggunakan Store alias: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe
+2026-09-29T11:19:58.979Z - Menjalankan shell: C:\Users\user\AppData\Local\Microsoft\WindowsApps\pwsh.exe  (cols: 76, rows: 28)
+2026-09-29T11:20:41.242Z - Memulai Native Host...
+2026-09-29T11:20:41.331Z - node-pty berhasil dimuat.
+2026-09-29T11:20:41.352Z - Menjalankan shell: cmd.exe  (cols: 155, rows: 28)

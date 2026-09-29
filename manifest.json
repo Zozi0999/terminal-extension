@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Local Terminal In-Tab",
+  "version": "1.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsfPdDVLwV4HiC7/zuJSnIzsybFM/CD0ZnG7SWxQIp1rwEC2SrcwjrYshEbgVxTy3vev1ekGdWWy4T6k/wmcDtdp1rFkyhRI29TU++3/lo/crHHi8+B7vKOd0OsDzmWJRtIIsEv2w8k6fjg717P6oUYWxnJUHhFzQ4HIHQ+voO83o1iMyrDoOtur0/0K521NUxqBgn9Q2e8RlycxNhvRIw6Z6YVVpuV8dRs1ZYMpXeSd+nFy3fdR+iOdLKepszSwA6RUuLJoEEh9K1CmSvbcor4iObix3XrFG67qV4FLQEYKvPNyN3O0r/DL63/ljwfFE3Csy2YVd++Sq7ON9rf5ysQIDAQAB",
+  "description": "Membuka terminal lokal secara langsung di tab browser dengan Native Messaging Host otomatis.",
+  "permissions": [
+    "nativeMessaging",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

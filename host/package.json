@@ -1,0 +1,9 @@
+{
+  "name": "com.antigravity.terminal-host",
+  "version": "1.0.0",
+  "description": "Native Messaging Host for Browser Terminal Extension",
+  "main": "host.js",
+  "dependencies": {
+    "node-pty": "^1.1.0-beta21"
+  }
+}
