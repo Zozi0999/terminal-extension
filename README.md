@@ -5,7 +5,19 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 [![Built With xterm.js](https://img.shields.io/badge/Terminal-xterm.js-red.svg)](https://xtermjs.org/)
 
-Buka dan jalankan terminal lokal (PowerShell / CMD / Bash) secara langsung di tab browser Chrome / Chromium melalui integrasi **Chrome Native Messaging Host**.
+Buka dan jalankan terminal lokal (PowerShell / CMD / Bash / WSL) secara langsung di tab browser Chrome / Chromium melalui integrasi **Chrome Native Messaging Host**.
+
+---
+
+## 📸 Preview Tampilan
+
+<div align="center">
+  <h3>✨ Antarmuka Terminal & Mode Aksi Cepat</h3>
+  <img src="assets/screenshots/terminal-preview-2.png" alt="Terminal UI Preview" width="850">
+  <br><br>
+  <h3>⚡ Pemilihan Shell & Multi-Tab</h3>
+  <img src="assets/screenshots/terminal-preview-1.png" alt="Shell Picker Preview" width="850">
+</div>
 
 ---
 
@@ -16,6 +28,7 @@ Buka dan jalankan terminal lokal (PowerShell / CMD / Bash) secara langsung di ta
   - ⚡ **Auto Enter/Y (Mode Petir)**: Mendeteksi dan otomatis merespons prompt CLI konfirmasi seperti `(y/n)` atau `[Enter]`. Tersedia opsi **Aman** (melewati prompt yang berisiko/destruktif) dan **Agresif** (langsung auto-respond semua prompt).
   - 🌊 **Kirim Enter Manual (Mode Ombak)**: Mengirimkan sinyal `Enter (\r)` instan ke panel aktif hanya dengan sekali klik tanpa perlu menyentuh keyboard fisik.
 - **Split Pane & Multi-Tab**: Buka beberapa sesi tab independen dan split panel berdampingan (side-by-side).
+- **Multi-Shell Support**: Beralih mudah antara Windows PowerShell, PowerShell 7, Command Prompt (CMD), dan Ubuntu WSL.
 - **Xterm.js Full Support**: Dukungan penuh emulator terminal (ANSI colors, cursor styling, fit addon, copy-paste).
 - **Persistent Extension Key**: Menggunakan public key tetap di `manifest.json`, sehingga Extension ID selalu konsisten dan tidak berubah saat reload atau ganti folder.
 - **Automated Host Setup**: Skrip instalasi otomatis untuk mendaftarkan Native Messaging Host ke Registry Windows.
@@ -37,6 +50,8 @@ Di setiap header panel terminal, terdapat tombol aksi pintar:
 
 ```text
 terminal-extension/
+├── assets/
+│   └── screenshots/              # Cuplikan antarmuka & preview
 ├── host/
 │   ├── host.js                   # Node.js Native Messaging host backend
 │   ├── host-manifest-template.json # Template manifest Native Host
