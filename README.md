@@ -1,13 +1,21 @@
-# 🖥️ Local Terminal In-Tab (Chrome Extension)
+<div align="center">
+
+# ⚡ Local Terminal In-Tab
+### *Bawa Kekuatan Terminal Lokal Langsung ke Dalam Browser Anda!*
 
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](#)
 [![Built With xterm.js](https://img.shields.io/badge/Terminal-xterm.js-red.svg)](https://xtermjs.org/)
+[![Status](https://img.shields.io/badge/Productivity-100x%20Boost-orange.svg)](#)
 
-Buka dan jalankan terminal lokal (PowerShell / CMD / Bash / WSL) secara langsung di tab browser Chrome / Chromium melalui integrasi **Chrome Native Messaging Host**.
+<p align="center">
+  <b>Bosan bolak-balik Alt+Tab antara browser dan terminal saat coding atau browsing?</b><br>
+  <b>Local Terminal In-Tab</b> adalah ekstensi browser modern bertenaga <b>Chrome Native Messaging Host</b> & <b>Xterm.js</b> yang menghadirkan shell lokal sungguhan (PowerShell, CMD, WSL) langsung di tab browser Anda — lengkap dengan fitur <b>Auto Enter pintar (⚡)</b>, <b>Split Screen ganda (🪟)</b>, dan <b>Multi-Tab multi-shell</b>!
+</p>
 
 ---
+</div>
 
 ## 📸 Preview Tampilan
 
