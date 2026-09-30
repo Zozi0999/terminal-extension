@@ -12,8 +12,11 @@ Buka dan jalankan terminal lokal (PowerShell / CMD / Bash / WSL) secara langsung
 ## 📸 Preview Tampilan
 
 <div align="center">
-  <h3>✨ Antarmuka Terminal & Mode Aksi Cepat</h3>
+  <h3>✨ Antarmuka Terminal & Mode Aksi Cepat (Single Pane)</h3>
   <img src="assets/screenshots/terminal-preview-2.png" alt="Terminal UI Preview" width="850">
+  <br><br>
+  <h3>🪟 Mode Split Pane (Multi-Panel Berdampingan)</h3>
+  <img src="assets/screenshots/terminal-preview-3.png" alt="Split Pane Preview" width="850">
   <br><br>
   <h3>⚡ Pemilihan Shell & Multi-Tab</h3>
   <img src="assets/screenshots/terminal-preview-1.png" alt="Shell Picker Preview" width="850">
